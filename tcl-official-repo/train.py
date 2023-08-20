@@ -390,6 +390,7 @@ if __name__ == "__main__":
             np.save(file=l_path.__str__(), arr=labels)
             save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
         else:
+            
             print(epoch + 1, end="-")
 
         if (epoch + 1) % 10 == 0:
