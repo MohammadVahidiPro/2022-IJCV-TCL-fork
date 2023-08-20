@@ -23,5 +23,5 @@ def gen_eda(train_orig, output_file, alpha_sr, alpha_ri, alpha_rs, alpha_rd, num
             writer.write(aug_sentence + '\n')
 
     writer.close()
-    print("generated augmented sentences with EDA for " + train_orig + " to " + output_file + " with num_aug=" + str(
-        num_aug))
+    # print("generated augmented sentences with EDA for " + train_orig + " to " + output_file + " with num_aug=" + str(
+    #     num_aug))

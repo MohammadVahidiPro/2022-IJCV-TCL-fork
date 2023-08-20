@@ -3,7 +3,7 @@ import torch
 import argparse
 import network
 import loss
-from utils import save_model
+from utils import save_model, save_model_10
 from torch.utils import data
 from sentence_transformers import SentenceTransformer
 from EDA.augment import gen_eda
@@ -105,7 +105,7 @@ def get_args_parser():
         "--start_epoch", default=0, type=int, help="start epoch"
     )
     parser.add_argument("--save_freq", default=50, type=int, help="saving frequency")
-    parser.add_argument("--num_workers", default=8, type=int) # 10
+    parser.add_argument("--num_workers", default=10, type=int) # 10
 
     return parser
 
@@ -391,6 +391,9 @@ if __name__ == "__main__":
             save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
         else:
             print(epoch + 1, end="-")
+
+        if (epoch + 1) % 10 == 0:
+            save_model_10(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
 
         # print(f"Epoch [{epoch+1}/{args.epochs}]\t Loss: {loss_epoch / len(data_loader)}")
     dif = (time.time() - t) / 60
