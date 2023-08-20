@@ -3,7 +3,7 @@ import torch
 import argparse
 import network
 import loss
-from utils import save_model, save_model_10
+from utils.save_model import save_model, save_model_10
 from torch.utils import data
 from sentence_transformers import SentenceTransformer
 from EDA.augment import gen_eda
@@ -389,9 +389,6 @@ if __name__ == "__main__":
             np.save(file=e_path.__str__(), arr=embeds) 
             np.save(file=l_path.__str__(), arr=labels)
             save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
-        else:
-            
-            print(epoch + 1, end="-")
 
         if (epoch + 1) % 10 == 0:
             save_model_10(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
