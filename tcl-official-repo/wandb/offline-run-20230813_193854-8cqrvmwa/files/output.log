@@ -1,0 +1,9 @@
+{'dataset_dir': './datasets/', 'dataset': 'Biomedical', 'class_num': 20, 'feature_dim': 128, 'eval_epoch': 1, 'gpu': '0', 'num_workers': 8, 'model_path': './save/Biomedical/release-text/'}
+cluster_num: 20
+Biomedical ./save/Biomedical/release-text/checkpoint_600_3_biomedical_tcl.tar
+### Creating features from model ###
+Step [0/40]	 Computing features...
+Step [20/40]	 Computing features...
+Features shape (20000,)
+0 0
+NMI = 0.4273 ARI = 0.2922 F = 0.4972 ACC = 0.4971

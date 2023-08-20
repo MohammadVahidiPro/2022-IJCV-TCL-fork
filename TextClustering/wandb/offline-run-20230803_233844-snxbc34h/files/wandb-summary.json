@@ -1,0 +1,1 @@
+{"time/perform_augmentation": 26.58714901606242, "_timestamp": 1691099007.5766697, "_runtime": 5682.451962709427, "_step": 242, "step/step": 77, "step/instance-loss": 4.725214004516602, "step/cluster-loss": 2.9372429847717285, "step/total-loss": 7.66245698928833, "epoch/loss": 598.1358041763306, "time/train": 4.930975302060445, "_wandb": {"runtime": 5685}}

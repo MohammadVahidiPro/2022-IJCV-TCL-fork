@@ -1,0 +1,265 @@
+2023-08-03 20:26:58,878 INFO    StreamThr :17412 [internal.py:wandb_internal():86] W&B internal server running at pid: 17412, started at: 2023-08-03 20:26:58.878602
+2023-08-03 20:26:58,878 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status
+2023-08-03 20:26:58,878 INFO    WriterThread:17412 [datastore.py:open_for_write():85] open: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\run-i4g6wjxq.wandb
+2023-08-03 20:26:58,878 DEBUG   SenderThread:17412 [sender.py:send():379] send: header
+2023-08-03 20:26:58,994 DEBUG   SenderThread:17412 [sender.py:send():379] send: run
+2023-08-03 20:27:00,971 INFO    SenderThread:17412 [dir_watcher.py:__init__():211] watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files
+2023-08-03 20:27:00,971 INFO    SenderThread:17412 [sender.py:_start_run_threads():1121] run started: i4g6wjxq with start time 1691081818.878601
+2023-08-03 20:27:01,071 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: summary_record
+2023-08-03 20:27:01,071 INFO    SenderThread:17412 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-03 20:27:01,087 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: check_version
+2023-08-03 20:27:01,087 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: check_version
+2023-08-03 20:27:01,985 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\wandb-summary.json
+2023-08-03 20:27:03,125 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: run_start
+2023-08-03 20:27:04,212 DEBUG   HandlerThread:17412 [system_info.py:__init__():31] System info init
+2023-08-03 20:27:04,212 DEBUG   HandlerThread:17412 [system_info.py:__init__():46] System info init done
+2023-08-03 20:27:04,212 INFO    HandlerThread:17412 [system_monitor.py:start():181] Starting system monitor
+2023-08-03 20:27:04,212 INFO    SystemMonitor:17412 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-03 20:27:04,212 INFO    HandlerThread:17412 [system_monitor.py:probe():201] Collecting system info
+2023-08-03 20:27:04,212 INFO    SystemMonitor:17412 [interfaces.py:start():190] Started cpu monitoring
+2023-08-03 20:27:04,228 INFO    SystemMonitor:17412 [interfaces.py:start():190] Started disk monitoring
+2023-08-03 20:27:04,228 INFO    SystemMonitor:17412 [interfaces.py:start():190] Started gpu monitoring
+2023-08-03 20:27:04,228 INFO    SystemMonitor:17412 [interfaces.py:start():190] Started memory monitoring
+2023-08-03 20:27:04,244 INFO    SystemMonitor:17412 [interfaces.py:start():190] Started network monitoring
+2023-08-03 20:27:04,259 DEBUG   HandlerThread:17412 [system_info.py:probe():195] Probing system
+2023-08-03 20:27:04,259 DEBUG   HandlerThread:17412 [system_info.py:_probe_git():180] Probing git
+2023-08-03 20:27:04,259 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:04,259 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:04,359 DEBUG   HandlerThread:17412 [system_info.py:_probe_git():188] Probing git done
+2023-08-03 20:27:04,359 DEBUG   HandlerThread:17412 [system_info.py:probe():240] Probing system done
+2023-08-03 20:27:04,359 DEBUG   HandlerThread:17412 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.4', 'heartbeatAt': '2023-08-03T16:57:04.259708', 'startedAt': '2023-08-03T16:56:58.793886', 'docker': None, 'cuda': None, 'args': ('--batch_size', '1', '--epochs', '500', '--save_freq', '100', '--dataset', 'Biomedical', '--model_path', './save/Biomedical/', '--gpu', '0'), 'state': 'running', 'program': 'D:\\text_clustering_paper\\my-forks\\tcl-fork\\2022-IJCV-TCL-fork\\TextClustering\\train.py', 'codePath': 'TextClustering\\train.py', 'git': {'remote': 'https://github.com/MohammadVahidiPro/2022-IJCV-TCL-fork.git', 'commit': '7e7c4e76cb569b995b5e0ffb88ffa21884cd926e'}, 'email': 'mohammadvahidi.pro@gmail.com', 'root': 'D:/text_clustering_paper/my-forks/tcl-fork/2022-IJCV-TCL-fork', 'host': 'DESKTOP-59KKEO0', 'username': 'Mohammad', 'executable': 'C:\\Users\\98914\\anaconda3\\envs\\tcl-text\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1792.0, 'min': 0.0, 'max': 1992.0}, 'cpu_freq_per_core': [{'current': 1792.0, 'min': 0.0, 'max': 1992.0}], 'disk': {'total': 585.9374961853027, 'used': 48.68074035644531}, 'gpu': 'NVIDIA GeForce MX150', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX150', 'memory_total': 4294967296}], 'memory': {'total': 15.877574920654297}}
+2023-08-03 20:27:04,359 INFO    HandlerThread:17412 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-03 20:27:04,359 INFO    HandlerThread:17412 [system_monitor.py:probe():214] Publishing system info
+2023-08-03 20:27:04,359 DEBUG   HandlerThread:17412 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-03 20:27:04,359 DEBUG   HandlerThread:17412 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-03 20:27:04,359 DEBUG   HandlerThread:17412 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-03 20:27:04,359 ERROR   HandlerThread:17412 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-08-03 20:27:04,428 DEBUG   HandlerThread:17412 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-03 20:27:04,428 DEBUG   HandlerThread:17412 [system_info.py:_save_code():89] Saving code
+2023-08-03 20:27:04,491 DEBUG   HandlerThread:17412 [system_info.py:_save_code():110] Saving code done
+2023-08-03 20:27:04,491 DEBUG   HandlerThread:17412 [system_info.py:_save_patches():127] Saving git patches
+2023-08-03 20:27:04,992 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\diff.patch
+2023-08-03 20:27:04,992 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\conda-environment.yaml
+2023-08-03 20:27:04,992 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\requirements.txt
+2023-08-03 20:27:04,992 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\code\TextClustering\train.py
+2023-08-03 20:27:04,992 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\code
+2023-08-03 20:27:04,992 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\code\TextClustering
+2023-08-03 20:27:04,992 DEBUG   HandlerThread:17412 [system_info.py:_save_patches():169] Saving git patches done
+2023-08-03 20:27:04,992 INFO    HandlerThread:17412 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-03 20:27:04,999 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:04,999 DEBUG   SenderThread:17412 [sender.py:send():379] send: files
+2023-08-03 20:27:04,999 INFO    SenderThread:17412 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-08-03 20:27:04,999 INFO    SenderThread:17412 [sender.py:_save_file():1375] saving file code\TextClustering\train.py with policy now
+2023-08-03 20:27:05,014 INFO    SenderThread:17412 [sender.py:_save_file():1375] saving file diff.patch with policy now
+2023-08-03 20:27:05,014 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-03 20:27:05,014 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: stop_status
+2023-08-03 20:27:06,007 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_created():271] file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\wandb-metadata.json
+2023-08-03 20:27:06,350 DEBUG   SenderThread:17412 [sender.py:send():379] send: telemetry
+2023-08-03 20:27:06,350 DEBUG   SenderThread:17412 [sender.py:send():379] send: telemetry
+2023-08-03 20:27:06,350 DEBUG   SenderThread:17412 [sender.py:send():379] send: run
+2023-08-03 20:27:06,360 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-08-03 20:27:06,368 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-08-03 20:27:06,512 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:06,512 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:06,835 INFO    SenderThread:17412 [sender.py:send_run():999] updated run: i4g6wjxq
+2023-08-03 20:27:06,835 DEBUG   SenderThread:17412 [sender.py:send():379] send: telemetry
+2023-08-03 20:27:06,835 DEBUG   SenderThread:17412 [sender.py:send():379] send: run
+2023-08-03 20:27:07,018 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\config.yaml
+2023-08-03 20:27:07,230 INFO    SenderThread:17412 [sender.py:send_run():999] updated run: i4g6wjxq
+2023-08-03 20:27:07,553 INFO    wandb-upload_0:17412 [upload_job.py:push():131] Uploaded file C:\Users\98914\AppData\Local\Temp\tmp5zu_8yrxwandb\qd545xpr-wandb-metadata.json
+2023-08-03 20:27:08,518 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:08,518 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:09,242 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:10,222 INFO    wandb-upload_1:17412 [upload_job.py:push():131] Uploaded file C:\Users\98914\AppData\Local\Temp\tmp5zu_8yrxwandb\0dmy4y96-code/TextClustering/train.py
+2023-08-03 20:27:10,539 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:10,539 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:12,547 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:12,547 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:14,278 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:14,552 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:14,553 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:16,594 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:16,594 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:18,658 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:18,658 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:19,302 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:20,035 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-03 20:27:20,035 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: stop_status
+2023-08-03 20:27:20,759 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:20,759 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:22,844 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:22,844 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:24,385 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:24,871 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:24,871 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:26,924 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:26,924 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:27,111 INFO    wandb-upload_2:17412 [upload_job.py:push():131] Uploaded file C:\Users\98914\AppData\Local\Temp\tmp5zu_8yrxwandb\a5niu1m9-diff.patch
+2023-08-03 20:27:28,976 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:28,976 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:29,407 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:30,141 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\config.yaml
+2023-08-03 20:27:31,030 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:31,030 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:33,069 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:33,069 ERROR   gpu       :17412 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-03 20:27:34,829 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:34,913 DEBUG   SenderThread:17412 [sender.py:send():379] send: telemetry
+2023-08-03 20:27:34,916 DEBUG   SenderThread:17412 [sender.py:send():379] send: exit
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:send_exit():584] handling exit code: 1
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:send_exit():586] handling runtime: 31
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:send_exit():592] send defer
+2023-08-03 20:27:34,916 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,916 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 0
+2023-08-03 20:27:34,916 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 1
+2023-08-03 20:27:34,916 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,916 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 1
+2023-08-03 20:27:34,916 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-08-03 20:27:34,916 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 2
+2023-08-03 20:27:34,916 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,916 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 2
+2023-08-03 20:27:34,916 INFO    HandlerThread:17412 [system_monitor.py:finish():190] Stopping system monitor
+2023-08-03 20:27:34,916 INFO    HandlerThread:17412 [interfaces.py:finish():202] Joined cpu monitor
+2023-08-03 20:27:34,916 DEBUG   SystemMonitor:17412 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-03 20:27:34,932 INFO    HandlerThread:17412 [interfaces.py:finish():202] Joined disk monitor
+2023-08-03 20:27:34,932 DEBUG   SystemMonitor:17412 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-03 20:27:34,932 DEBUG   SystemMonitor:17412 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-03 20:27:34,979 ERROR   gpu       :17412 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-08-03 20:27:34,979 INFO    HandlerThread:17412 [interfaces.py:finish():202] Joined gpu monitor
+2023-08-03 20:27:34,979 INFO    HandlerThread:17412 [interfaces.py:finish():202] Joined memory monitor
+2023-08-03 20:27:34,979 INFO    HandlerThread:17412 [interfaces.py:finish():202] Joined network monitor
+2023-08-03 20:27:34,979 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,979 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-08-03 20:27:34,979 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 3
+2023-08-03 20:27:34,979 DEBUG   SenderThread:17412 [sender.py:send():379] send: stats
+2023-08-03 20:27:34,979 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,979 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 3
+2023-08-03 20:27:34,979 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,979 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-08-03 20:27:34,979 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 4
+2023-08-03 20:27:34,979 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,979 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 4
+2023-08-03 20:27:34,979 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,979 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-08-03 20:27:34,979 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 5
+2023-08-03 20:27:34,979 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,979 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 5
+2023-08-03 20:27:34,994 DEBUG   SenderThread:17412 [sender.py:send():379] send: summary
+2023-08-03 20:27:34,994 INFO    SenderThread:17412 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-03 20:27:34,994 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,994 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-08-03 20:27:34,994 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 6
+2023-08-03 20:27:34,994 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:34,994 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 6
+2023-08-03 20:27:34,994 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:34,994 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-08-03 20:27:34,994 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:27:35,161 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\wandb-summary.json
+2023-08-03 20:27:35,409 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 7
+2023-08-03 20:27:35,409 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:35,409 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 7
+2023-08-03 20:27:35,409 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:35,409 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-08-03 20:27:35,409 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 8
+2023-08-03 20:27:35,409 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:35,409 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 8
+2023-08-03 20:27:35,409 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:27:35,409 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-08-03 20:27:35,409 INFO    SenderThread:17412 [job_builder.py:build():281] Attempting to build job artifact
+2023-08-03 20:27:35,694 INFO    SenderThread:17412 [job_builder.py:_get_source_type():400] is repo sourced job
+2023-08-03 20:27:35,933 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-03 20:27:36,165 INFO    Thread-16 :17412 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\config.yaml
+2023-08-03 20:27:36,181 INFO    SenderThread:17412 [job_builder.py:build():374] adding wandb-job metadata file
+2023-08-03 20:27:36,296 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 9
+2023-08-03 20:27:36,296 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: poll_exit
+2023-08-03 20:27:36,296 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:27:36,296 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 9
+2023-08-03 20:27:36,296 DEBUG   SenderThread:17412 [sender.py:send():379] send: artifact
+2023-08-03 20:27:36,937 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-03 20:27:41,985 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-03 20:27:42,233 INFO    wandb-upload_1:17412 [upload_job.py:push():89] Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmp9mc1w50c
+2023-08-03 20:27:42,271 INFO    wandb-upload_2:17412 [upload_job.py:push():89] Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpwhd19w3o
+2023-08-03 20:27:47,003 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-03 20:27:52,019 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-03 20:27:57,041 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-03 20:28:02,063 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-03 20:28:03,254 INFO    wandb-upload_0:17412 [upload_job.py:push():89] Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpvah_ml73
+2023-08-03 20:28:07,085 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-03 20:28:09,005 INFO    SenderThread:17412 [sender.py:send_artifact():1475] sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_TextClustering_train.py - {'id': 'QXJ0aWZhY3Q6NTMxNDg3NTAx', 'digest': '3a126576e691985220ee627705e26b5a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjg3NjkxMzYx', 'latestArtifact': None}, 'version': 'latest'}
+2023-08-03 20:28:09,005 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:28:09,005 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-08-03 20:28:09,005 INFO    SenderThread:17412 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-08-03 20:28:09,005 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: status_report
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():388] scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\conda-environment.yaml conda-environment.yaml
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\config.yaml config.yaml
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\diff.patch diff.patch
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\requirements.txt requirements.txt
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\wandb-metadata.json wandb-metadata.json
+2023-08-03 20:28:09,324 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\wandb-summary.json wandb-summary.json
+2023-08-03 20:28:09,342 INFO    SenderThread:17412 [dir_watcher.py:finish():402] scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\code\TextClustering\train.py code/TextClustering/train.py
+2023-08-03 20:28:09,342 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 10
+2023-08-03 20:28:09,342 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: poll_exit
+2023-08-03 20:28:09,342 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:28:09,342 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 10
+2023-08-03 20:28:09,344 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:28:09,344 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-08-03 20:28:09,344 INFO    SenderThread:17412 [file_pusher.py:finish():159] shutting down file pusher
+2023-08-03 20:28:10,072 INFO    wandb-upload_1:17412 [upload_job.py:push():131] Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\config.yaml
+2023-08-03 20:28:10,123 INFO    wandb-upload_2:17412 [upload_job.py:push():131] Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\wandb-summary.json
+2023-08-03 20:28:11,309 INFO    wandb-upload_0:17412 [upload_job.py:push():131] Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\files\requirements.txt
+2023-08-03 20:28:11,521 INFO    Thread-15 (_thread_body):17412 [sender.py:transition_state():612] send defer: 11
+2023-08-03 20:28:11,521 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:28:11,521 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 11
+2023-08-03 20:28:11,521 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:28:11,521 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-08-03 20:28:11,521 INFO    SenderThread:17412 [file_pusher.py:join():164] waiting for file pusher
+2023-08-03 20:28:11,523 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 12
+2023-08-03 20:28:11,523 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:28:11,523 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 12
+2023-08-03 20:28:11,523 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:28:11,523 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-08-03 20:28:11,523 INFO    SenderThread:17412 [file_stream.py:finish():593] file stream finish called
+2023-08-03 20:28:11,858 INFO    SenderThread:17412 [file_stream.py:finish():597] file stream finish is done
+2023-08-03 20:28:11,858 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 13
+2023-08-03 20:28:11,858 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:28:11,858 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 13
+2023-08-03 20:28:11,858 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:28:11,858 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-08-03 20:28:11,858 INFO    SenderThread:17412 [sender.py:transition_state():612] send defer: 14
+2023-08-03 20:28:11,858 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: defer
+2023-08-03 20:28:11,858 DEBUG   SenderThread:17412 [sender.py:send():379] send: final
+2023-08-03 20:28:11,858 INFO    HandlerThread:17412 [handler.py:handle_request_defer():170] handle defer: 14
+2023-08-03 20:28:11,858 DEBUG   SenderThread:17412 [sender.py:send():379] send: footer
+2023-08-03 20:28:11,858 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: defer
+2023-08-03 20:28:11,858 INFO    SenderThread:17412 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-08-03 20:28:11,858 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-03 20:28:11,858 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: server_info
+2023-08-03 20:28:11,858 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: poll_exit
+2023-08-03 20:28:11,858 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: get_summary
+2023-08-03 20:28:11,858 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: server_info
+2023-08-03 20:28:11,858 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: sampled_history
+2023-08-03 20:28:11,866 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: job_info
+2023-08-03 20:28:12,160 DEBUG   SenderThread:17412 [sender.py:send_request():406] send_request: job_info
+2023-08-03 20:28:12,162 DEBUG   HandlerThread:17412 [handler.py:handle_request():144] handle_request: shutdown
+2023-08-03 20:28:12,162 INFO    HandlerThread:17412 [handler.py:finish():857] shutting down handler
+2023-08-03 20:28:12,869 INFO    WriterThread:17412 [datastore.py:close():294] close: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\run-20230803_202658-i4g6wjxq\run-i4g6wjxq.wandb
+2023-08-03 20:28:13,170 INFO    SenderThread:17412 [sender.py:finish():1552] shutting down sender
+2023-08-03 20:28:13,170 INFO    SenderThread:17412 [file_pusher.py:finish():159] shutting down file pusher
+2023-08-03 20:28:13,170 INFO    SenderThread:17412 [file_pusher.py:join():164] waiting for file pusher

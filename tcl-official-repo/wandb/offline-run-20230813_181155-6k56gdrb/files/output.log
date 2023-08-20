@@ -1,0 +1,6 @@
+### Creating features from model ###
+Step [0/40]	 Computing features...
+Step [20/40]	 Computing features...
+Features shape (20000,)
+0 0
+NMI = 0.7922 ARI = 0.7748 F = 0.8847 ACC = 0.8843

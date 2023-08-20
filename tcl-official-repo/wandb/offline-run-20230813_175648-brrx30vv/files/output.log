@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\evaluation.py", line 82, in <module>
+    wb.run.tags = [args.datasets, 'author_checkpoint', 'evaluation']
+                   ^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'datasets'

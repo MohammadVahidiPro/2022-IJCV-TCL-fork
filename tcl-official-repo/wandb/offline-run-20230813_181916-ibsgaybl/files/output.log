@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\evaluation.py", line 107, in <module>
+    assert os.path.exists(model_fp)
+AssertionError

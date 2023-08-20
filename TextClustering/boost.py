@@ -8,6 +8,8 @@ from torch.utils import data
 from sentence_transformers import SentenceTransformer
 from EDA import augment
 import os
+import wandb as wb
+from pathlib import Path
 import itertools
 import nlpaug.augmenter.word as naw
 
@@ -21,7 +23,7 @@ def get_args_parser():
         "--start_epoch", default=1, type=int, help="start epoch"
     )
     parser.add_argument("--epochs", default=10, type=int)
-    parser.add_argument("--gpu", default='1', type=str)
+    parser.add_argument("--gpu", default='0', type=str)
 
     # Model parameters
     parser.add_argument("--feature_dim", default=128, type=int, help="dimension of ICH")
@@ -67,9 +69,11 @@ def get_args_parser():
     parser.add_argument(
         "--class_num", default=20, type=int, help="number of the clusters",
     )
+    parser.add_arguemnt("--run_id", defualt="", type=str)
+    parser.add_argument("--log_keyword", defualt="boost")
     parser.add_argument(
         "--model_path",
-        default="save/Biomedical/",
+        default="save/",
         help="path where to save, empty for no saving",
     )
     parser.add_argument("--seed", default=0, type=int)
@@ -135,9 +139,26 @@ def boost():
     return loss_epoch
 
 
+SBERT_PATH = {    
+    "distilbert": 'distilbert-base-nli-stsb-mean-tokens',
+    "minilm6": "all-MiniLM-L6-v2", 
+}
+
+
 if __name__ == "__main__":
     parser = get_args_parser()
     args = parser.parse_args()
+
+    if args.dataset == "StackOverflow":
+        args.class_num = 20
+    elif args.dataset == "Biomedical":
+        args.class_num = 20
+    elif args.dataset == "SearchSnippets":
+        args.class_num = 8
+    else:
+        raise ValueError("Invalid dataset")
+
+    args.model_path = (Path(args.model_path) / args.dataset / "release-text").resolve().__str__()
 
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     os.environ["MODEL_DIR"] = '../model'
@@ -149,103 +170,115 @@ if __name__ == "__main__":
     torch.manual_seed(args.seed)
     torch.cuda.manual_seed_all(args.seed)
     torch.cuda.manual_seed(args.seed)
+
     np.random.seed(args.seed)
+    run_id = args.run_id if args.run_id !="" else None
+    import pprint
+    pprint.pprint(args)
 
-    # model and optimizer
-    text_model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens', device='cuda')
-    class_num = args.class_num
-    model = network.Network(text_model, args.feature_dim, class_num)
-    model = model.to('cuda')
+    with wb.init(project="tcl-2022", id=run_id, resume="allow") as run:
+        # model and optimizer
+        text_model = SentenceTransformer(SBERT_PATH[args.bert], device='cuda')
+        class_num = args.class_num
+        model = network.Network(text_model, args.feature_dim, class_num)
+        model = model.to('cuda')
 
-    optimizer = torch.optim.SGD(model.backbone.parameters(),
-                                lr=args.lr_backbone,
-                                weight_decay=args.weight_decay)
-    optimizer_head = torch.optim.Adam(itertools.chain(model.instance_projector.parameters(),
-                                                      model.cluster_projector.parameters()),
-                                      lr=args.lr_head,
-                                      weight_decay=args.weight_decay)
+        optimizer = torch.optim.SGD(model.backbone.parameters(),
+                                    lr=args.lr_backbone,
+                                    weight_decay=args.weight_decay)
+        optimizer_head = torch.optim.Adam(itertools.chain(model.instance_projector.parameters(),
+                                                        model.cluster_projector.parameters()),
+                                        lr=args.lr_head,
+                                        weight_decay=args.weight_decay)
 
-    if args.resume:
-        model_fp = os.path.join(args.model_path, "checkpoint_{}.tar".format(args.start_epoch))
-        checkpoint = torch.load(model_fp)
-        model.load_state_dict(checkpoint['net'])
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        optimizer_head.load_state_dict(checkpoint['optimizer_head'])
-        args.start_epoch = checkpoint['epoch']
+        if args.resume:
+            model_fp = os.path.join(args.model_path, "checkpoint_{}.tar".format(args.start_epoch))
+            print("### checkpoint loaded {model_fp}")
+            checkpoint = torch.load(model_fp)
+            model.load_state_dict(checkpoint['net'])
+            optimizer.load_state_dict(checkpoint['optimizer'])
+            optimizer_head.load_state_dict(checkpoint['optimizer_head'])
+            args.start_epoch = checkpoint['epoch']
 
-    # loss
-    loss_device = torch.device("cuda")
-    criterion = loss.ContrastiveLoss(args.batch_size, args.batch_size, class_num,
-                                     args.instance_temperature, args.cluster_temperature,
-                                     loss_device).to(loss_device)
+        # loss
+        loss_device = torch.device("cuda")
+        criterion = loss.ContrastiveLoss(args.batch_size, args.batch_size, class_num,
+                                        args.instance_temperature, args.cluster_temperature,
+                                        loss_device).to(loss_device)
 
-    # pipeline
-    labels = []
-    with open(os.path.join(args.dataset_dir, args.dataset + '_gnd.txt'), "r") as f1:
-        for line in f1:
-            labels.append(int(line.strip('\n')))
-        f1.close()
-
-    labels = np.array(labels)
-    data_size = len(labels)
-    pseudo_labels = -torch.ones(data_size, dtype=torch.long).to('cuda')
-    last_pseudo_num = 0
-
-    for epoch in range(args.start_epoch, args.epochs):
-        # prepare data
-        data_dir = args.dataset_dir
-        aug1, aug2 = [], []
-
-        # EDA augmentation
-        augment.gen_eda(os.path.join(data_dir, args.dataset + 'WithGnd.txt'),
-                        os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'),
-                        0.2, 0.2, 0.2, 0.2, 1)
-        with open(os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'), "r") as f1:
+        # pipeline
+        labels = []
+        with open(os.path.join(args.dataset_dir, args.dataset + '_gnd.txt'), "r") as f1:
             for line in f1:
-                aug1.append(line.strip('\n'))
+                labels.append(int(line.strip('\n')))
             f1.close()
 
-        # Roberta augmentation
-        data = []
-        with open(os.path.join(data_dir, args.dataset + '.txt'), "r") as f1:
-            for line in f1:
-                data.append(line.strip('\n'))
-        aug_robert = naw.ContextualWordEmbsAug(
-            model_path='roberta-base', action="substitute", device='cuda', aug_p=0.2)
-        tmp = []
-        internal = 400  # the larger the faster, as long as not overflow the memory
-        with torch.no_grad():
-            for i in range(len(data)):
-                tmp.append(data[i])
-                if (i + 1) % internal == 0 or (i + 1) == len(data):
-                    if (i + 1) % 2000 == 0:
-                        print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
-                    aug2.extend(aug_robert.augment(tmp))
-                    tmp.clear()
+        labels = np.array(labels)
+        data_size = len(labels)
+        pseudo_labels = -torch.ones(data_size, dtype=torch.long).to('cuda')
+        last_pseudo_num = 0
 
-        dataset = DatasetIterater(data, aug2, aug1)
-        data_loader = torch.utils.data.DataLoader(
-            dataset,
-            batch_size=args.batch_size,
-            shuffle=True,
-            drop_last=True,
-            num_workers=args.num_workers,
-        )
-        loss_epoch = boost()
+        for epoch in range(args.start_epoch, args.epochs):
+            # prepare data
+            data_dir = args.dataset_dir
+            aug1, aug2 = [], []
 
-        if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
-            save_model(args, model, optimizer, optimizer_head, epoch + 1)
+            # EDA augmentation
+            augment.gen_eda(os.path.join(data_dir, args.dataset + 'WithGnd.txt'),
+                            os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'),
+                            0.2, 0.2, 0.2, 0.2, 1)
+            with open(os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'), "r") as f1:
+                for line in f1:
+                    aug1.append(line.strip('\n'))
+                f1.close()
 
-        print(f"Epoch [{epoch+1}/{args.epochs}]\t Loss: {loss_epoch / len(data_loader)}")
+            # Roberta augmentation
+            data = []
+            with open(os.path.join(data_dir, args.dataset + '.txt'), "r") as f1:
+                for line in f1:
+                    data.append(line.strip('\n'))
+            aug_robert = naw.ContextualWordEmbsAug(
+                model_path='roberta-base', action="substitute", device='cuda', aug_p=0.2)
+            tmp = []
+            internal = 400  # the larger the faster, as long as not overflow the memory
+            with torch.no_grad():
+                for i in range(len(data)):
+                    tmp.append(data[i])
+                    if (i + 1) % internal == 0 or (i + 1) == len(data):
+                        if (i + 1) % 2000 == 0:
+                            print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
+                        aug2.extend(aug_robert.augment(tmp))
+                        tmp.clear()
 
-        pseudo_index = (pseudo_labels != -1).cpu()
-        pseudo_num = pseudo_index.sum()
-        if pseudo_num > 0:
-            score, _ = cluster_utils.clustering_metric(labels[pseudo_index],
-                                                       pseudo_labels[pseudo_index].cpu().numpy(),
-                                                       args.class_num)
-            print('NMI = {:.4f} ARI = {:.4f} F = {:.4f} ACC = {:.4f}'.format(score['NMI'],
-                                                                             score['ARI'],
-                                                                             score['f_measure'],
-                                                                             score['accuracy']))
-        last_pseudo_num = pseudo_num
+            dataset = DatasetIterater(data, aug2, aug1)
+            data_loader = torch.utils.data.DataLoader(
+                dataset,
+                batch_size=args.batch_size,
+                shuffle=True,
+                drop_last=True,
+                num_workers=args.num_workers,
+            )
+            loss_epoch = boost()
+
+            if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
+                save_model(args, model, optimizer, optimizer_head, epoch + 1)
+
+            print(f"Epoch [{epoch+1}/{args.epochs}]\t Loss: {loss_epoch / len(data_loader)}")
+
+            pseudo_index = (pseudo_labels != -1).cpu()
+            pseudo_num = pseudo_index.sum()
+            if pseudo_num > 0:
+                score, _ = cluster_utils.clustering_metric(labels[pseudo_index],
+                                                        pseudo_labels[pseudo_index].cpu().numpy(),
+                                                        args.class_num)
+                score_map = {
+                    "ACC":score['accuracy'] ,"NMI":score['NMI'],
+                    "ARI":score['ARI'] , "F":score['f_measure']
+                }
+                score_map = {f"{args.log_keyword}/{k}": v for k, v in score_map.items()}
+                run.log(score_map)
+                print('NMI = {:.4f} ARI = {:.4f} F = {:.4f} ACC = {:.4f}'.format(score['NMI'],
+                                                                                score['ARI'],
+                                                                                score['f_measure'],
+                                                                                score['accuracy']))
+            last_pseudo_num = pseudo_num

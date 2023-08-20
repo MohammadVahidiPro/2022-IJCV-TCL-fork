@@ -1,0 +1,107 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 256
+epochs:
+  desc: null
+  value: 1
+gpu:
+  desc: null
+  value: '0'
+wb_mode:
+  desc: null
+  value: offline
+feature_dim:
+  desc: null
+  value: 128
+instance_temperature:
+  desc: null
+  value: 0.5
+cluster_temperature:
+  desc: null
+  value: 1.0
+weight_decay:
+  desc: null
+  value: 0.0001
+lr_backbone:
+  desc: null
+  value: 5.0e-06
+lr_head:
+  desc: null
+  value: 0.0005
+dataset_dir:
+  desc: null
+  value: ./datasets/
+dataset:
+  desc: null
+  value: Biomedical
+bert:
+  desc: null
+  value: minilm6
+class_num:
+  desc: null
+  value: 20
+model_path:
+  desc: null
+  value: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\save\Biomedical
+seed:
+  desc: null
+  value: 0
+resume:
+  desc: null
+  value: false
+start_epoch:
+  desc: null
+  value: 0
+save_freq:
+  desc: null
+  value: 100
+num_workers:
+  desc: null
+  value: 10
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.4
+    cli_version: 0.15.8
+    framework: huggingface
+    huggingface_version: 4.29.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1691084504.4772
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 53
+      - 55
+      - 75
+      - 105
+      2:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 53
+      - 55
+      - 75
+      - 105
+      3:
+      - 1
+      - 2
+      - 4
+      - 16
+      - 17
+      - 18
+      - 23
+      - 37
+      - 42
+      4: 3.11.4
+      5: 0.15.8
+      6: 4.29.2
+      8:
+      - 3
+      - 5

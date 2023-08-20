@@ -1,0 +1,149 @@
+2023-08-13 17:56:48,311 INFO    StreamThr :17504 [internal.py:wandb_internal():86] W&B internal server running at pid: 17504, started at: 2023-08-13 17:56:48.311820
+2023-08-13 17:56:48,311 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: status
+2023-08-13 17:56:48,327 INFO    WriterThread:17504 [datastore.py:open_for_write():85] open: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\run-brrx30vv.wandb
+2023-08-13 17:56:48,515 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: run_start
+2023-08-13 17:56:49,025 DEBUG   HandlerThread:17504 [system_info.py:__init__():31] System info init
+2023-08-13 17:56:49,172 DEBUG   HandlerThread:17504 [system_info.py:__init__():46] System info init done
+2023-08-13 17:56:49,172 INFO    HandlerThread:17504 [system_monitor.py:start():181] Starting system monitor
+2023-08-13 17:56:49,173 INFO    SystemMonitor:17504 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-13 17:56:49,173 INFO    HandlerThread:17504 [system_monitor.py:probe():201] Collecting system info
+2023-08-13 17:56:49,189 INFO    SystemMonitor:17504 [interfaces.py:start():190] Started cpu monitoring
+2023-08-13 17:56:49,200 DEBUG   HandlerThread:17504 [system_info.py:probe():195] Probing system
+2023-08-13 17:56:49,205 DEBUG   HandlerThread:17504 [system_info.py:_probe_git():180] Probing git
+2023-08-13 17:56:49,217 INFO    SystemMonitor:17504 [interfaces.py:start():190] Started disk monitoring
+2023-08-13 17:56:49,234 INFO    SystemMonitor:17504 [interfaces.py:start():190] Started gpu monitoring
+2023-08-13 17:56:49,237 ERROR   gpu       :17504 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-13 17:56:49,238 ERROR   gpu       :17504 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-13 17:56:49,239 INFO    SystemMonitor:17504 [interfaces.py:start():190] Started memory monitoring
+2023-08-13 17:56:49,318 INFO    SystemMonitor:17504 [interfaces.py:start():190] Started network monitoring
+2023-08-13 17:56:49,626 DEBUG   HandlerThread:17504 [system_info.py:_probe_git():188] Probing git done
+2023-08-13 17:56:49,626 DEBUG   HandlerThread:17504 [system_info.py:probe():240] Probing system done
+2023-08-13 17:56:49,626 DEBUG   HandlerThread:17504 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.4', 'heartbeatAt': '2023-08-13T14:26:49.201247', 'startedAt': '2023-08-13T14:26:48.233718', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\text_clustering_paper\\my-forks\\tcl-fork\\2022-IJCV-TCL-fork\\tcl-official-repo\\evaluation.py', 'codePath': 'tcl-official-repo\\evaluation.py', 'git': {'remote': 'https://github.com/MohammadVahidiPro/2022-IJCV-TCL-fork.git', 'commit': '7e7c4e76cb569b995b5e0ffb88ffa21884cd926e'}, 'email': 'mohammadvahidi.pro@gmail.com', 'root': 'D:/text_clustering_paper/my-forks/tcl-fork/2022-IJCV-TCL-fork', 'host': 'DESKTOP-59KKEO0', 'username': 'Mohammad', 'executable': 'C:\\Users\\98914\\anaconda3\\envs\\tcl-text\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1792.0, 'min': 0.0, 'max': 1992.0}, 'cpu_freq_per_core': [{'current': 1792.0, 'min': 0.0, 'max': 1992.0}], 'disk': {'total': 585.9374961853027, 'used': 56.54574966430664}, 'gpu': 'NVIDIA GeForce MX150', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX150', 'memory_total': 4294967296}], 'memory': {'total': 15.877574920654297}}
+2023-08-13 17:56:49,626 INFO    HandlerThread:17504 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-13 17:56:49,627 INFO    HandlerThread:17504 [system_monitor.py:probe():214] Publishing system info
+2023-08-13 17:56:49,627 DEBUG   HandlerThread:17504 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-13 17:56:49,629 DEBUG   HandlerThread:17504 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-13 17:56:49,629 DEBUG   HandlerThread:17504 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-13 17:56:49,637 ERROR   HandlerThread:17504 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-08-13 17:56:49,642 DEBUG   HandlerThread:17504 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-13 17:56:49,643 INFO    HandlerThread:17504 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-13 17:56:49,694 DEBUG   SenderThread:17504 [sender.py:send():379] send: exit
+2023-08-13 17:56:49,694 INFO    SenderThread:17504 [sender.py:send_exit():584] handling exit code: 1
+2023-08-13 17:56:49,695 INFO    SenderThread:17504 [sender.py:send_exit():586] handling runtime: 1
+2023-08-13 17:56:49,696 INFO    SenderThread:17504 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-13 17:56:49,696 INFO    SenderThread:17504 [sender.py:send_exit():592] send defer
+2023-08-13 17:56:49,696 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,697 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 0
+2023-08-13 17:56:49,697 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,697 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-08-13 17:56:49,697 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 1
+2023-08-13 17:56:49,698 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,698 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 1
+2023-08-13 17:56:49,698 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,699 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-08-13 17:56:49,699 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 2
+2023-08-13 17:56:49,699 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,699 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 2
+2023-08-13 17:56:49,699 INFO    HandlerThread:17504 [system_monitor.py:finish():190] Stopping system monitor
+2023-08-13 17:56:49,713 INFO    HandlerThread:17504 [interfaces.py:finish():202] Joined cpu monitor
+2023-08-13 17:56:49,713 DEBUG   SystemMonitor:17504 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-13 17:56:49,714 INFO    HandlerThread:17504 [interfaces.py:finish():202] Joined disk monitor
+2023-08-13 17:56:49,714 DEBUG   SystemMonitor:17504 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-13 17:56:49,714 DEBUG   SystemMonitor:17504 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-13 17:56:49,913 ERROR   gpu       :17504 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-08-13 17:56:49,913 INFO    HandlerThread:17504 [interfaces.py:finish():202] Joined gpu monitor
+2023-08-13 17:56:49,913 INFO    HandlerThread:17504 [interfaces.py:finish():202] Joined memory monitor
+2023-08-13 17:56:49,913 INFO    HandlerThread:17504 [interfaces.py:finish():202] Joined network monitor
+2023-08-13 17:56:49,915 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,915 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-08-13 17:56:49,915 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 3
+2023-08-13 17:56:49,916 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,916 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 3
+2023-08-13 17:56:49,916 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,916 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-08-13 17:56:49,917 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 4
+2023-08-13 17:56:49,917 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,917 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 4
+2023-08-13 17:56:49,918 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,918 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-08-13 17:56:49,918 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 5
+2023-08-13 17:56:49,918 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,919 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 5
+2023-08-13 17:56:49,919 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,919 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-08-13 17:56:49,919 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 6
+2023-08-13 17:56:49,920 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,920 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 6
+2023-08-13 17:56:49,920 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,920 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-08-13 17:56:49,921 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 7
+2023-08-13 17:56:49,921 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: status_report
+2023-08-13 17:56:49,921 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,922 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 7
+2023-08-13 17:56:49,922 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: status_report
+2023-08-13 17:56:49,922 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,923 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-08-13 17:56:49,923 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 8
+2023-08-13 17:56:49,923 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,923 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 8
+2023-08-13 17:56:49,924 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,924 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-08-13 17:56:49,924 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 9
+2023-08-13 17:56:49,924 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,924 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 9
+2023-08-13 17:56:49,925 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,925 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-08-13 17:56:49,925 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 10
+2023-08-13 17:56:49,925 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,925 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 10
+2023-08-13 17:56:49,926 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,926 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-08-13 17:56:49,926 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 11
+2023-08-13 17:56:49,926 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,927 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 11
+2023-08-13 17:56:49,927 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,927 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-08-13 17:56:49,927 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 12
+2023-08-13 17:56:49,928 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,928 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 12
+2023-08-13 17:56:49,928 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,928 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-08-13 17:56:49,928 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 13
+2023-08-13 17:56:49,929 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,929 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 13
+2023-08-13 17:56:49,929 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,929 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-08-13 17:56:49,929 INFO    SenderThread:17504 [sender.py:transition_state():612] send defer: 14
+2023-08-13 17:56:49,930 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: defer
+2023-08-13 17:56:49,930 DEBUG   SenderThread:17504 [sender.py:send():379] send: final
+2023-08-13 17:56:49,930 INFO    HandlerThread:17504 [handler.py:handle_request_defer():170] handle defer: 14
+2023-08-13 17:56:49,931 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: defer
+2023-08-13 17:56:49,931 INFO    SenderThread:17504 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-08-13 17:56:49,933 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-13 17:56:49,934 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-13 17:56:49,934 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: server_info
+2023-08-13 17:56:49,934 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: poll_exit
+2023-08-13 17:56:49,935 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: get_summary
+2023-08-13 17:56:49,935 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: poll_exit
+2023-08-13 17:56:49,935 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: sampled_history
+2023-08-13 17:56:49,936 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: server_info
+2023-08-13 17:56:49,936 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: job_info
+2023-08-13 17:56:49,938 DEBUG   SenderThread:17504 [sender.py:send_request():406] send_request: job_info
+2023-08-13 17:56:49,938 INFO    MainThread:17504 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2023-08-13 17:56:49,939 INFO    MainThread:17504 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2023-08-13 17:56:49,941 DEBUG   HandlerThread:17504 [handler.py:handle_request():144] handle_request: shutdown
+2023-08-13 17:56:49,941 INFO    HandlerThread:17504 [handler.py:finish():857] shutting down handler
+2023-08-13 17:56:50,947 INFO    SenderThread:17504 [sender.py:finish():1552] shutting down sender
+2023-08-13 17:56:50,947 INFO    WriterThread:17504 [datastore.py:close():294] close: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\run-brrx30vv.wandb

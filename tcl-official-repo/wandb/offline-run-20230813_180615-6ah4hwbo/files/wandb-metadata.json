@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "heartbeatAt": "2023-08-13T14:36:16.661863",
+    "startedAt": "2023-08-13T14:36:15.880264",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\text_clustering_paper\\my-forks\\tcl-fork\\2022-IJCV-TCL-fork\\tcl-official-repo\\evaluation.py",
+    "codePath": "tcl-official-repo\\evaluation.py",
+    "git": {
+        "remote": "https://github.com/MohammadVahidiPro/2022-IJCV-TCL-fork.git",
+        "commit": "7e7c4e76cb569b995b5e0ffb88ffa21884cd926e"
+    },
+    "email": "mohammadvahidi.pro@gmail.com",
+    "root": "D:/text_clustering_paper/my-forks/tcl-fork/2022-IJCV-TCL-fork",
+    "host": "DESKTOP-59KKEO0",
+    "username": "Mohammad",
+    "executable": "C:\\Users\\98914\\anaconda3\\envs\\tcl-text\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1792.0,
+        "min": 0.0,
+        "max": 1992.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1792.0,
+            "min": 0.0,
+            "max": 1992.0
+        }
+    ],
+    "disk": {
+        "total": 585.9374961853027,
+        "used": 57.30207061767578
+    },
+    "gpu": "NVIDIA GeForce MX150",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX150",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.877574920654297
+    }
+}

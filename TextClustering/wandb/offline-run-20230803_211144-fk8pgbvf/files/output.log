@@ -1,0 +1,16 @@
+generated augmented sentences with EDA for ./datasets/Biomedical.txt to ./datasets/BiomedicalEDA_aug.txt with num_aug=1
+roberta aug: the iter 0 / 10.0
+roberta aug: the iter 1 / 10.0
+roberta aug: the iter 2 / 10.0
+roberta aug: the iter 3 / 10.0
+roberta aug: the iter 4 / 10.0
+roberta aug: the iter 5 / 10.0
+roberta aug: the iter 6 / 10.0
+roberta aug: the iter 7 / 10.0
+roberta aug: the iter 8 / 10.0
+roberta aug: the iter 9 / 10.0
+Step [0/78]	 loss_instance: 5.551437854766846	 loss_cluster: 3.6678895950317383
+Step [50/78]	 loss_instance: 4.827033996582031	 loss_cluster: 2.9954042434692383
+Epoch [1/1]	 Loss: 8.024341020828638
+C:\Users\98914\anaconda3\envs\tcl-text\Lib\site-packages\torch\utils\data\dataloader.py:560: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(

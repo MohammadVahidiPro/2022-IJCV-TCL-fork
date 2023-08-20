@@ -1,0 +1,627 @@
+2023-08-03 22:05:52 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\run-fk8pgbvf.wandb
+2023-08-03 22:05:54 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files
+2023-08-03 22:05:54 INFO run started: fk8pgbvf with start time 1691084504.4772
+2023-08-03 22:05:54 INFO saving file wandb-metadata.json with policy now
+2023-08-03 22:05:54 INFO updated run: fk8pgbvf
+2023-08-03 22:05:54 INFO updated run: fk8pgbvf
+2023-08-03 22:05:55 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+2023-08-03 22:05:55 INFO saving file wandb-summary.json with policy end
+2023-08-03 22:05:55 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+2023-08-03 22:05:55 INFO handling exit code: 0
+2023-08-03 22:05:55 INFO handling runtime: 2528
+2023-08-03 22:05:55 INFO saving file wandb-summary.json with policy end
+2023-08-03 22:05:55 INFO send defer
+2023-08-03 22:05:55 INFO handle sender defer: 0
+2023-08-03 22:05:55 INFO send defer: 1
+2023-08-03 22:05:55 INFO handle sender defer: 1
+2023-08-03 22:05:55 INFO send defer: 2
+2023-08-03 22:05:55 INFO handle sender defer: 2
+2023-08-03 22:05:55 INFO send defer: 3
+2023-08-03 22:05:55 INFO handle sender defer: 3
+2023-08-03 22:05:55 INFO send defer: 4
+2023-08-03 22:05:55 INFO handle sender defer: 4
+2023-08-03 22:05:55 INFO send defer: 5
+2023-08-03 22:05:55 INFO handle sender defer: 5
+2023-08-03 22:05:55 INFO send defer: 6
+2023-08-03 22:05:55 INFO handle sender defer: 6
+2023-08-03 22:05:56 INFO send defer: 7
+2023-08-03 22:05:56 INFO handle sender defer: 7
+2023-08-03 22:05:56 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json
+2023-08-03 22:05:56 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+2023-08-03 22:05:56 ERROR upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-metadata.json?Expires=1691174155&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=hpELPYDyeE7zImCEXr9edTiSALKzA7pAkiRSImfvBCLnqK4HeoOcd4EOZGx2tdqmfxUu7NUlkdpll0b%2B77MwYpbxmO3IsgFPpK2znWlAlQfqm3bQRZWcLZLVPvsu3VhgmhaeemZQVr%2BsSyjy9fbueir1uumfMaBgM9nRQuFNJUVBwI7MQheNrK4ik5QE0MNw25VhYQugXWtMh0paPOPtauzBmNzTivdqpGcXVosILpQD53wTvJjk9ZBcDjfhk2V8iYKyqe4QLaQCEEYG9qYIbXLapkrmYhtYzwlemQRL%2BzVbRh%2F0JmWtvdT6g4%2B%2BJR795O7%2Bcs8cVObhdJUFTPE8nw%3D%3D: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-metadata.json?Expires=1691174155&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=hpELPYDyeE7zImCEXr9edTiSALKzA7pAkiRSImfvBCLnqK4HeoOcd4EOZGx2tdqmfxUu7NUlkdpll0b%2B77MwYpbxmO3IsgFPpK2znWlAlQfqm3bQRZWcLZLVPvsu3VhgmhaeemZQVr%2BsSyjy9fbueir1uumfMaBgM9nRQuFNJUVBwI7MQheNrK4ik5QE0MNw25VhYQugXWtMh0paPOPtauzBmNzTivdqpGcXVosILpQD53wTvJjk9ZBcDjfhk2V8iYKyqe4QLaQCEEYG9qYIbXLapkrmYhtYzwlemQRL%2BzVbRh%2F0JmWtvdT6g4%2B%2BJR795O7%2Bcs8cVObhdJUFTPE8nw%3D%3D
+2023-08-03 22:05:56 ERROR upload_file request headers: {'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1720'}
+2023-08-03 22:05:56 ERROR upload_file response body: b"<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>We're sorry, but this service is not available in your location</Details></Error>"
+2023-08-03 22:05:57 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+2023-08-03 22:05:57 INFO send defer: 8
+2023-08-03 22:05:57 INFO handle sender defer: 8
+2023-08-03 22:05:57 INFO Attempting to build job artifact
+2023-08-03 22:05:57 INFO is repo sourced job
+2023-08-03 22:05:58 INFO adding wandb-job metadata file
+2023-08-03 22:05:58 ERROR Failed to upload file: C:\Users\98914\AppData\Local\Temp\tmpjmerfqpmwandb\q1529ej6-wandb-metadata.json
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-metadata.json?Expires=1691174155&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=hpELPYDyeE7zImCEXr9edTiSALKzA7pAkiRSImfvBCLnqK4HeoOcd4EOZGx2tdqmfxUu7NUlkdpll0b%2B77MwYpbxmO3IsgFPpK2znWlAlQfqm3bQRZWcLZLVPvsu3VhgmhaeemZQVr%2BsSyjy9fbueir1uumfMaBgM9nRQuFNJUVBwI7MQheNrK4ik5QE0MNw25VhYQugXWtMh0paPOPtauzBmNzTivdqpGcXVosILpQD53wTvJjk9ZBcDjfhk2V8iYKyqe4QLaQCEEYG9qYIbXLapkrmYhtYzwlemQRL%2BzVbRh%2F0JmWtvdT6g4%2B%2BJR795O7%2Bcs8cVObhdJUFTPE8nw%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:05:58 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+2023-08-03 22:05:58 INFO send defer: 9
+2023-08-03 22:06:00 ERROR Failed to upload file: C:\Users\98914\AppData\Local\Temp\tmpjmerfqpmwandb\q1529ej6-wandb-metadata.json
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-metadata.json?Expires=1691174155&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=hpELPYDyeE7zImCEXr9edTiSALKzA7pAkiRSImfvBCLnqK4HeoOcd4EOZGx2tdqmfxUu7NUlkdpll0b%2B77MwYpbxmO3IsgFPpK2znWlAlQfqm3bQRZWcLZLVPvsu3VhgmhaeemZQVr%2BsSyjy9fbueir1uumfMaBgM9nRQuFNJUVBwI7MQheNrK4ik5QE0MNw25VhYQugXWtMh0paPOPtauzBmNzTivdqpGcXVosILpQD53wTvJjk9ZBcDjfhk2V8iYKyqe4QLaQCEEYG9qYIbXLapkrmYhtYzwlemQRL%2BzVbRh%2F0JmWtvdT6g4%2B%2BJR795O7%2Bcs8cVObhdJUFTPE8nw%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:01 INFO Skipped uploading C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpo_syjny5
+2023-08-03 22:06:02 ERROR upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/87691361/531577455/162b2239f080c1b830ad31060b7fb573?Expires=1691174161&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=wUN5GtuAZO3ZFYrXO0XLsX%2BZjQi0GzsToKoPuKG%2BMkjyhhPPo0O0aRTUN53HzuCpcsk1iOwVXk9d11%2BbVqjK4VuD%2BwEsAavHV%2Fasn%2BciBhelUT6LcxtZavpJVcK4OVZ9r4GFxSDcG0z08XSBuCqowzIguicjglZTMvsSfBdYNoClwIFPLhNJxG4TRWqHhYvN2oRC8al%2FaoA9YE3Ph%2B5P5b%2FqFZuwIEp%2FOqX0JSjIh3lpW%2FhqRPuGfkPxO1x%2F7O1xAXGv8MktLlLd7hN9QsqeAMbpcqaUZqsRyPRhJJKgJSOdQQ3JGqM1gQ0jZQBxKQ0tvrvi%2FgVAH9vot1cCCZSMZg%3D%3D: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/87691361/531577455/162b2239f080c1b830ad31060b7fb573?Expires=1691174161&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=wUN5GtuAZO3ZFYrXO0XLsX%2BZjQi0GzsToKoPuKG%2BMkjyhhPPo0O0aRTUN53HzuCpcsk1iOwVXk9d11%2BbVqjK4VuD%2BwEsAavHV%2Fasn%2BciBhelUT6LcxtZavpJVcK4OVZ9r4GFxSDcG0z08XSBuCqowzIguicjglZTMvsSfBdYNoClwIFPLhNJxG4TRWqHhYvN2oRC8al%2FaoA9YE3Ph%2B5P5b%2FqFZuwIEp%2FOqX0JSjIh3lpW%2FhqRPuGfkPxO1x%2F7O1xAXGv8MktLlLd7hN9QsqeAMbpcqaUZqsRyPRhJJKgJSOdQQ3JGqM1gQ0jZQBxKQ0tvrvi%2FgVAH9vot1cCCZSMZg%3D%3D
+2023-08-03 22:06:02 ERROR upload_file request headers: {'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'FisiOfCAwbgwrTEGC3+1cw==', 'Content-Type': 'application/json', 'Content-Length': '3324'}
+2023-08-03 22:06:02 ERROR upload_file response body: b"<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>We're sorry, but this service is not available in your location</Details></Error>"
+2023-08-03 22:06:02 ERROR Failed to upload file: C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpcnzrp99e
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/87691361/531577455/162b2239f080c1b830ad31060b7fb573?Expires=1691174161&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=wUN5GtuAZO3ZFYrXO0XLsX%2BZjQi0GzsToKoPuKG%2BMkjyhhPPo0O0aRTUN53HzuCpcsk1iOwVXk9d11%2BbVqjK4VuD%2BwEsAavHV%2Fasn%2BciBhelUT6LcxtZavpJVcK4OVZ9r4GFxSDcG0z08XSBuCqowzIguicjglZTMvsSfBdYNoClwIFPLhNJxG4TRWqHhYvN2oRC8al%2FaoA9YE3Ph%2B5P5b%2FqFZuwIEp%2FOqX0JSjIh3lpW%2FhqRPuGfkPxO1x%2F7O1xAXGv8MktLlLd7hN9QsqeAMbpcqaUZqsRyPRhJJKgJSOdQQ3JGqM1gQ0jZQBxKQ0tvrvi%2FgVAH9vot1cCCZSMZg%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 69, in push
+    deduped = self.save_fn(
+              ^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\artifacts\artifact_saver.py", line 200, in <lambda>
+    lambda entry, progress_callback: self._manifest.storage_policy.store_file_sync(
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\artifacts\storage_policies\wandb_storage_policy.py", line 311, in store_file_sync
+    self.default_file_upload(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\artifacts\storage_policies\wandb_storage_policy.py", line 233, in default_file_upload
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\internal.py", line 168, in upload_file_retry
+    return self.api.upload_file_retry(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:03 ERROR Failed to upload file: C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpcnzrp99e
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/87691361/531577455/162b2239f080c1b830ad31060b7fb573?Expires=1691174161&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=wUN5GtuAZO3ZFYrXO0XLsX%2BZjQi0GzsToKoPuKG%2BMkjyhhPPo0O0aRTUN53HzuCpcsk1iOwVXk9d11%2BbVqjK4VuD%2BwEsAavHV%2Fasn%2BciBhelUT6LcxtZavpJVcK4OVZ9r4GFxSDcG0z08XSBuCqowzIguicjglZTMvsSfBdYNoClwIFPLhNJxG4TRWqHhYvN2oRC8al%2FaoA9YE3Ph%2B5P5b%2FqFZuwIEp%2FOqX0JSjIh3lpW%2FhqRPuGfkPxO1x%2F7O1xAXGv8MktLlLd7hN9QsqeAMbpcqaUZqsRyPRhJJKgJSOdQQ3JGqM1gQ0jZQBxKQ0tvrvi%2FgVAH9vot1cCCZSMZg%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 69, in push
+    deduped = self.save_fn(
+              ^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\artifacts\artifact_saver.py", line 200, in <lambda>
+    lambda entry, progress_callback: self._manifest.storage_policy.store_file_sync(
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\artifacts\storage_policies\wandb_storage_policy.py", line 311, in store_file_sync
+    self.default_file_upload(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\artifacts\storage_policies\wandb_storage_policy.py", line 233, in default_file_upload
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\internal.py", line 168, in upload_file_retry
+    return self.api.upload_file_retry(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:03 ERROR send_artifact: failed for artifact "job/job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_TextClustering_train.py": <Response [403]>
+2023-08-03 22:06:03 INFO handle sender defer: 9
+2023-08-03 22:06:03 INFO shutting down directory watcher
+2023-08-03 22:06:03 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files
+2023-08-03 22:06:03 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\conda-environment.yaml conda-environment.yaml
+2023-08-03 22:06:03 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml config.yaml
+2023-08-03 22:06:03 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log output.log
+2023-08-03 22:06:03 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\requirements.txt requirements.txt
+2023-08-03 22:06:03 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-metadata.json wandb-metadata.json
+2023-08-03 22:06:03 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json wandb-summary.json
+2023-08-03 22:06:03 INFO send defer: 10
+2023-08-03 22:06:03 INFO handle sender defer: 10
+2023-08-03 22:06:03 INFO shutting down file pusher
+2023-08-03 22:06:03 INFO shutting down sender
+2023-08-03 22:06:03 INFO shutting down file pusher
+2023-08-03 22:06:03 INFO waiting for file pusher
+2023-08-03 22:06:04 ERROR upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/config.yaml?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Mnkf5CdV3YHXnhcjW9IfXGBw%2BuHX%2B70nimU7qtcoMZPd4Iu9wYmDD4qA4EBkSqqVxWljtP1x%2BTcTO7kq0nvQ5jzCtIq3rUGtpcPwxYVo6ubUYdU0vYOgjgDL%2FMNGW%2FOaH0NpYG1hMWTc2mtTJeK6l9JEhpURN09nJEzSMgYxNubyQTxUpqvIrTIxQNoNxZCxCvuJfqFmxB81QAqZY2W%2FCGthZ%2Beu8rTjMs7mk1u11R3XoauTe20XGniRhzylMqbIQqDb5DkvFUzlsNROpxmZOP2C8ikKZjPZdSnf43Sk3LHfhTNdrv7WofIg32Yek7RYbau6nqKXiw8jiD5yNFKoEw%3D%3D: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/config.yaml?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Mnkf5CdV3YHXnhcjW9IfXGBw%2BuHX%2B70nimU7qtcoMZPd4Iu9wYmDD4qA4EBkSqqVxWljtP1x%2BTcTO7kq0nvQ5jzCtIq3rUGtpcPwxYVo6ubUYdU0vYOgjgDL%2FMNGW%2FOaH0NpYG1hMWTc2mtTJeK6l9JEhpURN09nJEzSMgYxNubyQTxUpqvIrTIxQNoNxZCxCvuJfqFmxB81QAqZY2W%2FCGthZ%2Beu8rTjMs7mk1u11R3XoauTe20XGniRhzylMqbIQqDb5DkvFUzlsNROpxmZOP2C8ikKZjPZdSnf43Sk3LHfhTNdrv7WofIg32Yek7RYbau6nqKXiw8jiD5yNFKoEw%3D%3D
+2023-08-03 22:06:04 ERROR upload_file request headers: {'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1596'}
+2023-08-03 22:06:04 ERROR upload_file response body: b"<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>We're sorry, but this service is not available in your location</Details></Error>"
+2023-08-03 22:06:04 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/config.yaml?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Mnkf5CdV3YHXnhcjW9IfXGBw%2BuHX%2B70nimU7qtcoMZPd4Iu9wYmDD4qA4EBkSqqVxWljtP1x%2BTcTO7kq0nvQ5jzCtIq3rUGtpcPwxYVo6ubUYdU0vYOgjgDL%2FMNGW%2FOaH0NpYG1hMWTc2mtTJeK6l9JEhpURN09nJEzSMgYxNubyQTxUpqvIrTIxQNoNxZCxCvuJfqFmxB81QAqZY2W%2FCGthZ%2Beu8rTjMs7mk1u11R3XoauTe20XGniRhzylMqbIQqDb5DkvFUzlsNROpxmZOP2C8ikKZjPZdSnf43Sk3LHfhTNdrv7WofIg32Yek7RYbau6nqKXiw8jiD5yNFKoEw%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:04 ERROR upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/requirements.txt?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=azcXiUxVVK4ifA63f0tflz%2F85q257u9oizKkVk1nGyaVC9BeUzPvu46TldSZtNdJwY3m0ybhq9NcBQyFXb4fFB7r46PqOH31nPeDKxy8%2Bf1mw4xzIMmzXvVpEI64qbfm5hFr18J1fvj%2B4w70PBX13PtHith5RwfLbk0r3u4dAu1AJXquk2cI20T8ZkSRk%2FXYBTp4g8bAQ%2BvhhVxlYAO46woB2Gl4mheIffcyxEfTyIes3x%2Fnz5oqDlkbaP4qvkU5I3IRsOJEVrt1D%2FUq5bRi2LEx0FZH8b11oyvxUgQHKCpvd5fzA0m%2Brn1cfxjBChvB6pYYNkyaQmxdHTCLlNEQWA%3D%3D: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/requirements.txt?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=azcXiUxVVK4ifA63f0tflz%2F85q257u9oizKkVk1nGyaVC9BeUzPvu46TldSZtNdJwY3m0ybhq9NcBQyFXb4fFB7r46PqOH31nPeDKxy8%2Bf1mw4xzIMmzXvVpEI64qbfm5hFr18J1fvj%2B4w70PBX13PtHith5RwfLbk0r3u4dAu1AJXquk2cI20T8ZkSRk%2FXYBTp4g8bAQ%2BvhhVxlYAO46woB2Gl4mheIffcyxEfTyIes3x%2Fnz5oqDlkbaP4qvkU5I3IRsOJEVrt1D%2FUq5bRi2LEx0FZH8b11oyvxUgQHKCpvd5fzA0m%2Brn1cfxjBChvB6pYYNkyaQmxdHTCLlNEQWA%3D%3D
+2023-08-03 22:06:04 ERROR upload_file request headers: {'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4455'}
+2023-08-03 22:06:04 ERROR upload_file response body: b"<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>We're sorry, but this service is not available in your location</Details></Error>"
+2023-08-03 22:06:05 ERROR upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/output.log?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=KgK11Hl3iJYdkDHy2o1HsZvi1ot45emYlTRzA%2F4OANxfeXJw%2FEKxJ70o3JEjHUByw1H2075kM9NoFotVW23aVvkOXTtBCjh1z4tFfhCsSy%2F0%2FB7go4DBSjhS%2FRQOGg9fwtIMygl9gfs%2F%2B5v4MzGd6CqZIE8lQ3Q1CxlGoX0XJbkBedHvnv%2B2Rkc67t7Fb81cwU%2FlJop6AAdIPxchSwb3CfUJ6qtECJ4Hh47nMTMot1Dh2hw4HJSbAwSqJGGJgNph3vcFXolGYNAZp6s7sHt1gn4SqIWU5nIU398KxHbTW4WxhBO2l%2F%2B9XdCVGMp17f%2FTbxh55dyTqofI5U4bc4ZVXg%3D%3D: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/output.log?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=KgK11Hl3iJYdkDHy2o1HsZvi1ot45emYlTRzA%2F4OANxfeXJw%2FEKxJ70o3JEjHUByw1H2075kM9NoFotVW23aVvkOXTtBCjh1z4tFfhCsSy%2F0%2FB7go4DBSjhS%2FRQOGg9fwtIMygl9gfs%2F%2B5v4MzGd6CqZIE8lQ3Q1CxlGoX0XJbkBedHvnv%2B2Rkc67t7Fb81cwU%2FlJop6AAdIPxchSwb3CfUJ6qtECJ4Hh47nMTMot1Dh2hw4HJSbAwSqJGGJgNph3vcFXolGYNAZp6s7sHt1gn4SqIWU5nIU398KxHbTW4WxhBO2l%2F%2B9XdCVGMp17f%2FTbxh55dyTqofI5U4bc4ZVXg%3D%3D
+2023-08-03 22:06:05 ERROR upload_file request headers: {'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1157'}
+2023-08-03 22:06:05 ERROR upload_file response body: b"<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>We're sorry, but this service is not available in your location</Details></Error>"
+2023-08-03 22:06:05 ERROR upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-summary.json?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=TFrIqZjaN7AilZVrAlcwRPvnzPkFMnBNnyQ9wuj%2FPJsu3TO9GuIgcWnVyiYPSTr9Yv2hrlI7UZDmNCF3aDgD9ZKvsjFjR6dF0zOZ5SfGR1CCEKS%2FJ83LcA9lAQZLgdKr1%2B6mdWAz%2Fsu%2FgnGPHw7Ca9DRWtIZyY%2BCD1bq%2Fj%2FbJvrlPrFkNRSEGw%2FnjzQT%2FotSF58IAfcxUrgN7OQb6wR%2BT5Uk09nEZdMsA4w0lL5FZXrhSgMgbbSIW2P0QpCwNZFtB93Hhd9eUMYX6GMdlTfLf731Mxs1iPhB4ArQQIzQaiPyz1ZTKGzDsO3s4wR%2FP71kZk%2FVguyHVeNty6tQ4rCKpQ%3D%3D: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-summary.json?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=TFrIqZjaN7AilZVrAlcwRPvnzPkFMnBNnyQ9wuj%2FPJsu3TO9GuIgcWnVyiYPSTr9Yv2hrlI7UZDmNCF3aDgD9ZKvsjFjR6dF0zOZ5SfGR1CCEKS%2FJ83LcA9lAQZLgdKr1%2B6mdWAz%2Fsu%2FgnGPHw7Ca9DRWtIZyY%2BCD1bq%2Fj%2FbJvrlPrFkNRSEGw%2FnjzQT%2FotSF58IAfcxUrgN7OQb6wR%2BT5Uk09nEZdMsA4w0lL5FZXrhSgMgbbSIW2P0QpCwNZFtB93Hhd9eUMYX6GMdlTfLf731Mxs1iPhB4ArQQIzQaiPyz1ZTKGzDsO3s4wR%2FP71kZk%2FVguyHVeNty6tQ4rCKpQ%3D%3D
+2023-08-03 22:06:05 ERROR upload_file request headers: {'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '276'}
+2023-08-03 22:06:05 ERROR upload_file response body: b"<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>We're sorry, but this service is not available in your location</Details></Error>"
+2023-08-03 22:06:06 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/config.yaml?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Mnkf5CdV3YHXnhcjW9IfXGBw%2BuHX%2B70nimU7qtcoMZPd4Iu9wYmDD4qA4EBkSqqVxWljtP1x%2BTcTO7kq0nvQ5jzCtIq3rUGtpcPwxYVo6ubUYdU0vYOgjgDL%2FMNGW%2FOaH0NpYG1hMWTc2mtTJeK6l9JEhpURN09nJEzSMgYxNubyQTxUpqvIrTIxQNoNxZCxCvuJfqFmxB81QAqZY2W%2FCGthZ%2Beu8rTjMs7mk1u11R3XoauTe20XGniRhzylMqbIQqDb5DkvFUzlsNROpxmZOP2C8ikKZjPZdSnf43Sk3LHfhTNdrv7WofIg32Yek7RYbau6nqKXiw8jiD5yNFKoEw%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:07 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\requirements.txt
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/requirements.txt?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=azcXiUxVVK4ifA63f0tflz%2F85q257u9oizKkVk1nGyaVC9BeUzPvu46TldSZtNdJwY3m0ybhq9NcBQyFXb4fFB7r46PqOH31nPeDKxy8%2Bf1mw4xzIMmzXvVpEI64qbfm5hFr18J1fvj%2B4w70PBX13PtHith5RwfLbk0r3u4dAu1AJXquk2cI20T8ZkSRk%2FXYBTp4g8bAQ%2BvhhVxlYAO46woB2Gl4mheIffcyxEfTyIes3x%2Fnz5oqDlkbaP4qvkU5I3IRsOJEVrt1D%2FUq5bRi2LEx0FZH8b11oyvxUgQHKCpvd5fzA0m%2Brn1cfxjBChvB6pYYNkyaQmxdHTCLlNEQWA%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:07 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/output.log?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=KgK11Hl3iJYdkDHy2o1HsZvi1ot45emYlTRzA%2F4OANxfeXJw%2FEKxJ70o3JEjHUByw1H2075kM9NoFotVW23aVvkOXTtBCjh1z4tFfhCsSy%2F0%2FB7go4DBSjhS%2FRQOGg9fwtIMygl9gfs%2F%2B5v4MzGd6CqZIE8lQ3Q1CxlGoX0XJbkBedHvnv%2B2Rkc67t7Fb81cwU%2FlJop6AAdIPxchSwb3CfUJ6qtECJ4Hh47nMTMot1Dh2hw4HJSbAwSqJGGJgNph3vcFXolGYNAZp6s7sHt1gn4SqIWU5nIU398KxHbTW4WxhBO2l%2F%2B9XdCVGMp17f%2FTbxh55dyTqofI5U4bc4ZVXg%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:07 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-summary.json?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=TFrIqZjaN7AilZVrAlcwRPvnzPkFMnBNnyQ9wuj%2FPJsu3TO9GuIgcWnVyiYPSTr9Yv2hrlI7UZDmNCF3aDgD9ZKvsjFjR6dF0zOZ5SfGR1CCEKS%2FJ83LcA9lAQZLgdKr1%2B6mdWAz%2Fsu%2FgnGPHw7Ca9DRWtIZyY%2BCD1bq%2Fj%2FbJvrlPrFkNRSEGw%2FnjzQT%2FotSF58IAfcxUrgN7OQb6wR%2BT5Uk09nEZdMsA4w0lL5FZXrhSgMgbbSIW2P0QpCwNZFtB93Hhd9eUMYX6GMdlTfLf731Mxs1iPhB4ArQQIzQaiPyz1ZTKGzDsO3s4wR%2FP71kZk%2FVguyHVeNty6tQ4rCKpQ%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:09 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\requirements.txt
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/requirements.txt?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=azcXiUxVVK4ifA63f0tflz%2F85q257u9oizKkVk1nGyaVC9BeUzPvu46TldSZtNdJwY3m0ybhq9NcBQyFXb4fFB7r46PqOH31nPeDKxy8%2Bf1mw4xzIMmzXvVpEI64qbfm5hFr18J1fvj%2B4w70PBX13PtHith5RwfLbk0r3u4dAu1AJXquk2cI20T8ZkSRk%2FXYBTp4g8bAQ%2BvhhVxlYAO46woB2Gl4mheIffcyxEfTyIes3x%2Fnz5oqDlkbaP4qvkU5I3IRsOJEVrt1D%2FUq5bRi2LEx0FZH8b11oyvxUgQHKCpvd5fzA0m%2Brn1cfxjBChvB6pYYNkyaQmxdHTCLlNEQWA%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:10 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/output.log?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=KgK11Hl3iJYdkDHy2o1HsZvi1ot45emYlTRzA%2F4OANxfeXJw%2FEKxJ70o3JEjHUByw1H2075kM9NoFotVW23aVvkOXTtBCjh1z4tFfhCsSy%2F0%2FB7go4DBSjhS%2FRQOGg9fwtIMygl9gfs%2F%2B5v4MzGd6CqZIE8lQ3Q1CxlGoX0XJbkBedHvnv%2B2Rkc67t7Fb81cwU%2FlJop6AAdIPxchSwb3CfUJ6qtECJ4Hh47nMTMot1Dh2hw4HJSbAwSqJGGJgNph3vcFXolGYNAZp6s7sHt1gn4SqIWU5nIU398KxHbTW4WxhBO2l%2F%2B9XdCVGMp17f%2FTbxh55dyTqofI5U4bc4ZVXg%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:10 ERROR Failed to upload file: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2522, in upload_file
+    wandb._sentry.reraise(e)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\analytics\sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2494, in upload_file
+    response.raise_for_status()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://storage.googleapis.com/wandb-production.appspot.com/mohammadvahidi-pro/tcl-2022/fk8pgbvf/wandb-summary.json?Expires=1691174164&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=TFrIqZjaN7AilZVrAlcwRPvnzPkFMnBNnyQ9wuj%2FPJsu3TO9GuIgcWnVyiYPSTr9Yv2hrlI7UZDmNCF3aDgD9ZKvsjFjR6dF0zOZ5SfGR1CCEKS%2FJ83LcA9lAQZLgdKr1%2B6mdWAz%2Fsu%2FgnGPHw7Ca9DRWtIZyY%2BCD1bq%2Fj%2FbJvrlPrFkNRSEGw%2FnjzQT%2FotSF58IAfcxUrgN7OQb6wR%2BT5Uk09nEZdMsA4w0lL5FZXrhSgMgbbSIW2P0QpCwNZFtB93Hhd9eUMYX6GMdlTfLf731Mxs1iPhB4ArQQIzQaiPyz1ZTKGzDsO3s4wR%2FP71kZk%2FVguyHVeNty6tQ4rCKpQ%3D%3D
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\filesync\upload_job.py", line 125, in push
+    self._api.upload_file_retry(
+  File "C:\Users\98914\anaconda3\envs\clonetop2_sccl\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: <Response [403]>
+2023-08-03 22:06:10 INFO send defer: 11
+2023-08-03 22:06:10 INFO file stream finish called
+2023-08-03 22:06:14 INFO file stream finish is done
+2023-08-03 22:07:11 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\run-fk8pgbvf.wandb
+2023-08-03 22:07:12 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files
+2023-08-03 22:07:12 INFO run started: fk8pgbvf with start time 1691084504.4772
+2023-08-03 22:07:12 INFO saving file wandb-metadata.json with policy now
+2023-08-03 22:07:12 INFO updated run: fk8pgbvf
+2023-08-03 22:07:13 INFO updated run: fk8pgbvf
+2023-08-03 22:07:13 INFO saving file wandb-summary.json with policy end
+2023-08-03 22:07:13 INFO handling exit code: 0
+2023-08-03 22:07:13 INFO handling runtime: 2528
+2023-08-03 22:07:13 INFO saving file wandb-summary.json with policy end
+2023-08-03 22:07:13 INFO send defer
+2023-08-03 22:07:13 INFO handle sender defer: 0
+2023-08-03 22:07:13 INFO send defer: 1
+2023-08-03 22:07:13 INFO handle sender defer: 1
+2023-08-03 22:07:13 INFO send defer: 2
+2023-08-03 22:07:13 INFO handle sender defer: 2
+2023-08-03 22:07:13 INFO send defer: 3
+2023-08-03 22:07:13 INFO handle sender defer: 3
+2023-08-03 22:07:13 INFO send defer: 4
+2023-08-03 22:07:13 INFO handle sender defer: 4
+2023-08-03 22:07:13 INFO send defer: 5
+2023-08-03 22:07:13 INFO handle sender defer: 5
+2023-08-03 22:07:13 INFO send defer: 6
+2023-08-03 22:07:13 INFO handle sender defer: 6
+2023-08-03 22:07:13 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+2023-08-03 22:07:13 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json
+2023-08-03 22:07:13 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+2023-08-03 22:07:13 INFO send defer: 7
+2023-08-03 22:07:14 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+2023-08-03 22:07:14 INFO handle sender defer: 7
+2023-08-03 22:07:15 INFO send defer: 8
+2023-08-03 22:07:15 INFO handle sender defer: 8
+2023-08-03 22:07:15 INFO Attempting to build job artifact
+2023-08-03 22:07:15 INFO is repo sourced job
+2023-08-03 22:07:15 INFO adding wandb-job metadata file
+2023-08-03 22:07:15 INFO send defer: 9
+2023-08-03 22:07:15 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+2023-08-03 22:07:15 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmp53vojzhbwandb\07orw4kp-wandb-metadata.json
+2023-08-03 22:07:17 INFO Skipped uploading C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmp4t_du2dm
+2023-08-03 22:07:22 INFO Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpd16oe65i
+2023-08-03 22:07:24 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_TextClustering_train.py - {'id': 'QXJ0aWZhY3Q6NTMxNTc4ODE5', 'digest': '756138c656cf1708609302256cffcc95', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjg3NjkxMzYx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTMxNDg3NTAx', 'versionIndex': 0}}, 'version': 'latest'}
+2023-08-03 22:07:24 INFO handle sender defer: 9
+2023-08-03 22:07:24 INFO shutting down directory watcher
+2023-08-03 22:07:25 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files
+2023-08-03 22:07:25 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\conda-environment.yaml conda-environment.yaml
+2023-08-03 22:07:25 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml config.yaml
+2023-08-03 22:07:25 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log output.log
+2023-08-03 22:07:25 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\requirements.txt requirements.txt
+2023-08-03 22:07:25 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-metadata.json wandb-metadata.json
+2023-08-03 22:07:25 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json wandb-summary.json
+2023-08-03 22:07:25 INFO send defer: 10
+2023-08-03 22:07:25 INFO handle sender defer: 10
+2023-08-03 22:07:25 INFO shutting down file pusher
+2023-08-03 22:07:25 INFO shutting down sender
+2023-08-03 22:07:25 INFO shutting down file pusher
+2023-08-03 22:07:25 INFO waiting for file pusher
+2023-08-03 22:07:27 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\wandb-summary.json
+2023-08-03 22:07:27 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\requirements.txt
+2023-08-03 22:07:27 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\config.yaml
+2023-08-03 22:07:27 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_211144-fk8pgbvf\files\output.log
+2023-08-03 22:07:28 INFO send defer: 11
+2023-08-03 22:07:28 INFO file stream finish called
+2023-08-03 22:07:32 INFO file stream finish is done
+2023-08-04 01:28:52 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\run-snxbc34h.wandb
+2023-08-04 01:28:54 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files
+2023-08-04 01:28:54 INFO run started: snxbc34h with start time 1691093325.124707
+2023-08-04 01:28:54 INFO saving file wandb-metadata.json with policy now
+2023-08-04 01:28:54 INFO updated run: snxbc34h
+2023-08-04 01:28:55 INFO updated run: snxbc34h
+2023-08-04 01:28:55 INFO saving file wandb-summary.json with policy end
+2023-08-04 01:28:55 INFO handling exit code: 0
+2023-08-04 01:28:55 INFO handling runtime: 5685
+2023-08-04 01:28:55 INFO saving file wandb-summary.json with policy end
+2023-08-04 01:28:55 INFO send defer
+2023-08-04 01:28:55 INFO handle sender defer: 0
+2023-08-04 01:28:55 INFO send defer: 1
+2023-08-04 01:28:55 INFO handle sender defer: 1
+2023-08-04 01:28:55 INFO send defer: 2
+2023-08-04 01:28:55 INFO handle sender defer: 2
+2023-08-04 01:28:55 INFO send defer: 3
+2023-08-04 01:28:55 INFO handle sender defer: 3
+2023-08-04 01:28:55 INFO send defer: 4
+2023-08-04 01:28:55 INFO handle sender defer: 4
+2023-08-04 01:28:55 INFO send defer: 5
+2023-08-04 01:28:55 INFO handle sender defer: 5
+2023-08-04 01:28:55 INFO send defer: 6
+2023-08-04 01:28:55 INFO handle sender defer: 6
+2023-08-04 01:28:55 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\config.yaml
+2023-08-04 01:28:55 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\wandb-summary.json
+2023-08-04 01:28:55 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\output.log
+2023-08-04 01:28:55 INFO send defer: 7
+2023-08-04 01:28:55 INFO handle sender defer: 7
+2023-08-04 01:28:56 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\config.yaml
+2023-08-04 01:28:57 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmpcqgwmqomwandb\na91guwx-wandb-metadata.json
+2023-08-04 01:28:57 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\output.log
+2023-08-04 01:28:59 INFO send defer: 8
+2023-08-04 01:28:59 INFO handle sender defer: 8
+2023-08-04 01:28:59 INFO Attempting to build job artifact
+2023-08-04 01:28:59 INFO is repo sourced job
+2023-08-04 01:28:59 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\output.log
+2023-08-04 01:28:59 INFO adding wandb-job metadata file
+2023-08-04 01:28:59 INFO send defer: 9
+2023-08-04 01:29:02 INFO Skipped uploading C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpwjnr13c6
+2023-08-04 01:29:03 INFO Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmp3w3iqj1y
+2023-08-04 01:29:05 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_TextClustering_train.py - {'id': 'QXJ0aWZhY3Q6NTMxNzQ1NDUz', 'digest': '18261dcdab4fb06c4aad192ea7a431a7', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjg3NjkxMzYx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTMxNTc4ODE5', 'versionIndex': 1}}, 'version': 'latest'}
+2023-08-04 01:29:05 INFO handle sender defer: 9
+2023-08-04 01:29:05 INFO shutting down directory watcher
+2023-08-04 01:29:06 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files
+2023-08-04 01:29:06 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\conda-environment.yaml conda-environment.yaml
+2023-08-04 01:29:06 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\config.yaml config.yaml
+2023-08-04 01:29:06 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\output.log output.log
+2023-08-04 01:29:06 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\requirements.txt requirements.txt
+2023-08-04 01:29:06 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\wandb-metadata.json wandb-metadata.json
+2023-08-04 01:29:06 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\wandb-summary.json wandb-summary.json
+2023-08-04 01:29:06 INFO send defer: 10
+2023-08-04 01:29:06 INFO handle sender defer: 10
+2023-08-04 01:29:06 INFO shutting down file pusher
+2023-08-04 01:29:06 INFO shutting down sender
+2023-08-04 01:29:06 INFO shutting down file pusher
+2023-08-04 01:29:06 INFO waiting for file pusher
+2023-08-04 01:29:07 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\config.yaml
+2023-08-04 01:29:08 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\wandb-summary.json
+2023-08-04 01:29:08 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\requirements.txt
+2023-08-04 01:29:09 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\TextClustering\wandb\offline-run-20230803_233844-snxbc34h\files\output.log
+2023-08-04 01:29:09 INFO send defer: 11
+2023-08-04 01:29:09 INFO file stream finish called
+2023-08-04 01:29:14 INFO file stream finish is done

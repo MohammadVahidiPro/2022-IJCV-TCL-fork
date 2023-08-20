@@ -1,0 +1,1 @@
+{"AMI": 0.4255, "NMI": 0.4273, "ARI": 0.2922, "accuracy": 0.4971, "precision": 0.5043, "recall": 0.4971, "f_measure": 0.4972, "_wandb": {"runtime": 363}}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\evaluation.py", line 110, in <module>
+    model.load_state_dict(torch.load(model_fp, map_location=device.type)['net'])
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\site-packages\torch\nn\modules\module.py", line 2041, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Network:
+	size mismatch for cluster_projector.2.weight: copying a param with shape torch.Size([20, 768]) from checkpoint, the shape in current model is torch.Size([8, 768]).
+	size mismatch for cluster_projector.2.bias: copying a param with shape torch.Size([20]) from checkpoint, the shape in current model is torch.Size([8]).

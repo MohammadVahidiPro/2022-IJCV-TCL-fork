@@ -7,19 +7,36 @@ from utils import save_model
 from torch.utils import data
 from sentence_transformers import SentenceTransformer
 from EDA.augment import gen_eda
+
+import wandb as wb
+from pathlib import Path
 import os
 import itertools
 import torch.nn as nn
 import nlpaug.augmenter.word as naw
+import time, functools
 
+def time_it(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        results = func(*args, **kwargs)
+
+        end = time.time()
+        dif = (end - start) / 60 #round((end - start)/60, ndigits=2)
+        wb.log({f"time/{func.__name__}": dif})
+        print(f"$$$ timer $$$ <{func.__name__:.>15}> took {dif:.2} mins")
+        return results
+    return wrapper
 
 def get_args_parser():
     parser = argparse.ArgumentParser("TCL for clustering", add_help=False)
     parser.add_argument(
-        "--batch_size", default=128, type=int, help="Batch size per GPU"
+        "--batch_size", default=256, type=int, help="Batch size per GPU" #128
     )
     parser.add_argument("--epochs", default=1, type=int)
-    parser.add_argument("--gpu", default='1', type=str)
+    parser.add_argument("--gpu", default='0', type=str)
+    parser.add_argument("--wb_mode", default="offline")
 
     # Model parameters
     parser.add_argument("--feature_dim", default=128, type=int, help="dimension of ICH")
@@ -60,14 +77,15 @@ def get_args_parser():
         default="Biomedical",
         type=str,
         help="dataset",
-        choices=["StackOverflow", "Biomedical"],
+        choices=["StackOverflow", "Biomedical", "SearchSnippets"],
     )
+    parser.add_argument("--bert", default="minilm6", type=str, choices=["distilbert", "minilm6"])
     parser.add_argument(
         "--class_num", default=20, type=int, help="number of the clusters",
     )
     parser.add_argument(
         "--model_path",
-        default="save/Biomedical/",
+        default="save/",
         help="path where to save, empty for no saving",
     )
     parser.add_argument("--seed", default=0, type=int)
@@ -85,6 +103,7 @@ def get_args_parser():
     return parser
 
 
+
 class DatasetIterater(data.Dataset):
     def __init__(self, texta, textb):
         self.texta = texta
@@ -96,8 +115,8 @@ class DatasetIterater(data.Dataset):
     def __len__(self):
         return len(self.texta)
 
-
-def train():
+@time_it #decorator and logging times
+def train(model, data_loader, criterion, optimizer, optimizer_head):
     loss_epoch = 0
     for step, (x_i, x_j) in enumerate(data_loader):
         optimizer.zero_grad()
@@ -109,100 +128,174 @@ def train():
         loss.backward()
         optimizer.step()
         optimizer_head.step()
+        wb.log({
+            "step/step": step,
+            "step/instance-loss": loss_instance.item(),
+            "step/cluster-loss": loss_cluster.item(),
+            "step/total-loss": loss.item()
+        })
         if step % 50 == 0:
             print(f"Step [{step}/{len(data_loader)}]\t "
                   f"loss_instance: {loss_instance.item()}\t "
                   f"loss_cluster: {loss_cluster.item()}")
         loss_epoch += loss.item()
+    wb.log({"epoch/loss": loss_epoch}) #TODO: check this out
     return loss_epoch
 
+
+@time_it
+def perform_augmentation(args):
+    data_dir = args.dataset_dir
+    aug1, aug2 = [], []
+
+    # EDA augmentation
+    gen_eda(os.path.join(data_dir, args.dataset + '.txt'),
+                    os.path.join(data_dir, args.dataset + 'EDA_aug.txt'),
+                    0.2, 0.2, 0.2, 0.2, 1)
+    with open(os.path.join(data_dir, args.dataset + 'EDA_aug.txt'), "r") as f1:
+        for line in f1:
+            aug1.append(line.strip('\n'))
+        f1.close()
+
+    # Roberta augmentation
+    data = []
+    with open(os.path.join(data_dir, args.dataset + '.txt'), "r") as f1:
+        for line in f1:
+            data.append(line.strip('\n'))
+    aug_robert = naw.ContextualWordEmbsAug(
+        model_path='roberta-base', action="substitute", device='cuda', aug_p=0.2)
+    tmp = []
+    internal = 400   # the larger the faster, as long as not overflow the memory
+    with torch.no_grad():
+        for i in range(len(data)):
+            tmp.append(data[i])
+            if (i + 1) % internal == 0 or (i + 1) == len(data):
+                if (i + 1) % 2000 == 0:
+                    print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
+                aug2.extend(aug_robert.augment(tmp))
+                tmp.clear()
+    return aug1, aug2
+
+
+
+# TODO: @time_it
+def main(config):
+    print("\n################ new run ####################\n")
+    import pprint
+    pprint.pprint(config)
+    with wb.init(project='tcl-2022',mode=config.wb_mode, config=config, group=config.dataset) as  run:
+        args = run.config
+        run.tags = [args.dataset, args.bert]
+        run.name = "|".join(run.tags)  + run.id
+
+        os.environ["TOKENIZERS_PARALLELISM"] = "false"  
+        os.environ["MODEL_DIR"] = '../ImageClustering/model'   # TODO: wtf??
+        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
+
+        if not os.path.exists(args.model_path):
+            os.makedirs(args.model_path)
+
+        torch.manual_seed(args.seed)
+        torch.cuda.manual_seed_all(args.seed)
+        torch.cuda.manual_seed(args.seed)
+        np.random.seed(args.seed)
+
+        # model and optimizer
+        text_model = SentenceTransformer(SBERT_PATH[args.bert], device='cuda')
+        class_num = args.class_num
+        model = network.Network(text_model, args.feature_dim, class_num)
+        model = model.to('cuda')
+        print(model)
+
+        optimizer = torch.optim.SGD(model.backbone.parameters(),
+                                    lr=args.lr_backbone,
+                                    weight_decay=args.weight_decay)
+        optimizer_head = torch.optim.Adam(itertools.chain(model.instance_projector.parameters(),
+                                                        model.cluster_projector.parameters()),
+                                        lr=args.lr_head,
+                                        weight_decay=args.weight_decay)
+
+        if args.resume:
+            model_fp = os.path.join(args.model_path, "checkpoint_{}.tar".format(args.start_epoch))
+            checkpoint = torch.load(model_fp)
+            model.load_state_dict(checkpoint['net'])
+            optimizer.load_state_dict(checkpoint['optimizer'])
+            args.start_epoch = checkpoint['epoch'] + 1
+
+        # loss
+        loss_device = torch.device("cuda")
+        criterion = loss.ContrastiveLoss(args.batch_size, args.batch_size, class_num, args.instance_temperature,
+                                                    args.cluster_temperature, loss_device).to(loss_device)
+
+        assert next(model.parameters()).device.type == "cuda"
+        # pipeline
+        for epoch in range(args.start_epoch, args.epochs):
+            # prepare data
+
+            # data_dir = args.dataset_dir
+            # aug1, aug2 = [], []
+
+            # # EDA augmentation
+            # gen_eda(os.path.join(data_dir, args.dataset + '.txt'),
+            #                 os.path.join(data_dir, args.dataset + 'EDA_aug.txt'),
+            #                 0.2, 0.2, 0.2, 0.2, 1)
+            # with open(os.path.join(data_dir, args.dataset + 'EDA_aug.txt'), "r") as f1:
+            #     for line in f1:
+            #         aug1.append(line.strip('\n'))
+            #     f1.close()
+
+            # # Roberta augmentation
+            # data = []
+            # with open(os.path.join(data_dir, args.dataset + '.txt'), "r") as f1:
+            #     for line in f1:
+            #         data.append(line.strip('\n'))
+            # aug_robert = naw.ContextualWordEmbsAug(
+            #     model_path='roberta-base', action="substitute", device='cuda', aug_p=0.2)
+            # tmp = []
+            # internal = 400   # the larger the faster, as long as not overflow the memory
+            # with torch.no_grad():
+            #     for i in range(len(data)):
+            #         tmp.append(data[i])
+            #         if (i + 1) % internal == 0 or (i + 1) == len(data):
+            #             if (i + 1) % 2000 == 0:
+            #                 print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
+            #             aug2.extend(aug_robert.augment(tmp))
+            #             tmp.clear()
+            aug1, aug2 = perform_augmentation(args)
+            dataset = DatasetIterater(aug1, aug2)
+            data_loader = torch.utils.data.DataLoader(
+                dataset,
+                batch_size=args.batch_size,
+                shuffle=True,
+                drop_last=True,
+                num_workers=args.num_workers,
+            )
+            wb.watch(model)
+            loss_epoch = train(model, data_loader, criterion, optimizer, optimizer_head)
+            if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
+                save_model(args, model, optimizer, optimizer_head, epoch + 1)
+
+            print(f"Epoch [{epoch+1}/{args.epochs}]\t Loss: {loss_epoch / len(data_loader)}")
+        run.finish()
+
+SBERT_PATH = {    
+    "distilbert": 'distilbert-base-nli-stsb-mean-tokens',
+    "minilm6": "all-MiniLM-L6-v2", 
+}
 
 if __name__ == "__main__":
     parser = get_args_parser()
     args = parser.parse_args()
+    if args.dataset == "StackOverflow":
+        args.class_num = 20
+    elif args.dataset == "Biomedical":
+        args.class_num = 20
+    elif args.dataset == "SearchSnippets":
+        args.class_num = 8
+    else:
+        raise ValueError("Invalid dataset")
 
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
-    os.environ["MODEL_DIR"] = '../model'
-    os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
-
-    if not os.path.exists(args.model_path):
-        os.makedirs(args.model_path)
-
-    torch.manual_seed(args.seed)
-    torch.cuda.manual_seed_all(args.seed)
-    torch.cuda.manual_seed(args.seed)
-    np.random.seed(args.seed)
-
-    # model and optimizer
-    text_model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens', device='cuda')
-    class_num = args.class_num
-    model = network.Network(text_model, args.feature_dim, class_num)
-    model = model.to('cuda')
-
-    optimizer = torch.optim.SGD(model.backbone.parameters(),
-                                lr=args.lr_backbone,
-                                weight_decay=args.weight_decay)
-    optimizer_head = torch.optim.Adam(itertools.chain(model.instance_projector.parameters(),
-                                                      model.cluster_projector.parameters()),
-                                      lr=args.lr_head,
-                                      weight_decay=args.weight_decay)
-
-    if args.resume:
-        model_fp = os.path.join(args.model_path, "checkpoint_{}.tar".format(args.start_epoch))
-        checkpoint = torch.load(model_fp)
-        model.load_state_dict(checkpoint['net'])
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        args.start_epoch = checkpoint['epoch'] + 1
-
-    # loss
-    loss_device = torch.device("cuda")
-    criterion = loss.ContrastiveLoss(args.batch_size, args.batch_size, class_num, args.instance_temperature,
-                                                 args.cluster_temperature, loss_device).to(loss_device)
-
-    # pipeline
-    for epoch in range(args.start_epoch, args.epochs):
-        # prepare data
-        data_dir = args.dataset_dir
-        aug1, aug2 = [], []
-
-        # EDA augmentation
-        gen_eda(os.path.join(data_dir, args.dataset + '.txt'),
-                        os.path.join(data_dir, args.dataset + 'EDA_aug.txt'),
-                        0.2, 0.2, 0.2, 0.2, 1)
-        with open(os.path.join(data_dir, args.dataset + 'EDA_aug.txt'), "r") as f1:
-            for line in f1:
-                aug1.append(line.strip('\n'))
-            f1.close()
-
-        # Roberta augmentation
-        data = []
-        with open(os.path.join(data_dir, args.dataset + '.txt'), "r") as f1:
-            for line in f1:
-                data.append(line.strip('\n'))
-        aug_robert = naw.ContextualWordEmbsAug(
-            model_path='roberta-base', action="substitute", device='cuda', aug_p=0.2)
-        tmp = []
-        internal = 400  # the larger the faster, as long as not overflow the memory
-        with torch.no_grad():
-            for i in range(len(data)):
-                tmp.append(data[i])
-                if (i + 1) % internal == 0 or (i + 1) == len(data):
-                    if (i + 1) % 2000 == 0:
-                        print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
-                    aug2.extend(aug_robert.augment(tmp))
-                    tmp.clear()
-
-        dataset = DatasetIterater(aug1, aug2)
-        data_loader = torch.utils.data.DataLoader(
-            dataset,
-            batch_size=args.batch_size,
-            shuffle=True,
-            drop_last=True,
-            num_workers=args.num_workers,
-        )
-        loss_epoch = train()
-
-        if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
-            save_model(args, model, optimizer, optimizer_head, epoch + 1)
-
-        print(f"Epoch [{epoch+1}/{args.epochs}]\t Loss: {loss_epoch / len(data_loader)}")
+    args.model_path = (Path(args.model_path) / args.dataset).resolve().__str__()
+    import pprint
+    pprint.pprint(args)
+    main(args)

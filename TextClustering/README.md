@@ -1,5 +1,6 @@
 PyTorch implementation for text clustering.
 
+python train.py --batch_size 256 --epochs 1 --save_freq 100 --dataset Biomedical --model_path ./save --gpu 0
 ## Requirements
 
 - sentence-transformers 1.0.3
@@ -23,13 +24,13 @@ We follow [SCCL](https://arxiv.org/abs/2103.12953) to obtain datasets.
 python train.py --batch_size 256 --epochs 500 --save_freq 100 --dataset Biomedical --model_path ./save/Biomedical/ --gpu 0
 
 # Boost
-python boost.py --batch_size 256 --epochs 510 --save_freq 1 --dataset Biomedical --model_path ./save/Biomedical/release-text/ --resume True --start_epoch 500 --gpu 0
+python boost.py --batch_size 256 --epochs 510 --save_freq 1 --dataset Biomedical --model_path ./save/Biomedica??????l/release-text/ --resume True --start_epoch 500 --gpu 0
 ```
 
 ### Evaluation
 
 ```
-python evaluation.py --dataset Biomedical --eval_epoch 506 --model_path ./save/Biomedical/ --gpu 0
+python evaluation.py --dataset Biomedical --eval_epoch 506 --model_path ./save/Bio??????medical/ --gpu 0
 ```
 
 ## License

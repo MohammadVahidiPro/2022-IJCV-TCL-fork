@@ -1,0 +1,556 @@
+2023-08-13 19:47:55 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\run-brrx30vv.wandb
+2023-08-13 19:47:57 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files
+2023-08-13 19:47:57 INFO run started: brrx30vv with start time 1691936808.31182
+2023-08-13 19:47:57 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:47:58 INFO updated run: brrx30vv
+2023-08-13 19:47:58 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:47:58 INFO handling exit code: 1
+2023-08-13 19:47:58 INFO handling runtime: 1
+2023-08-13 19:47:58 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:47:58 INFO send defer
+2023-08-13 19:47:58 INFO handle sender defer: 0
+2023-08-13 19:47:58 INFO send defer: 1
+2023-08-13 19:47:58 INFO handle sender defer: 1
+2023-08-13 19:47:58 INFO send defer: 2
+2023-08-13 19:47:58 INFO handle sender defer: 2
+2023-08-13 19:47:58 INFO send defer: 3
+2023-08-13 19:47:58 INFO handle sender defer: 3
+2023-08-13 19:47:58 INFO send defer: 4
+2023-08-13 19:47:58 INFO handle sender defer: 4
+2023-08-13 19:47:58 INFO send defer: 5
+2023-08-13 19:47:58 INFO handle sender defer: 5
+2023-08-13 19:47:58 INFO send defer: 6
+2023-08-13 19:47:58 INFO handle sender defer: 6
+2023-08-13 19:47:58 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\wandb-summary.json
+2023-08-13 19:47:58 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\config.yaml
+2023-08-13 19:47:58 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\output.log
+2023-08-13 19:47:58 INFO send defer: 7
+2023-08-13 19:47:58 INFO handle sender defer: 7
+2023-08-13 19:47:59 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmprmc430dvwandb\k2fj3ody-wandb-metadata.json
+2023-08-13 19:47:59 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\config.yaml
+2023-08-13 19:48:00 INFO send defer: 8
+2023-08-13 19:48:00 INFO handle sender defer: 8
+2023-08-13 19:48:00 INFO Attempting to build job artifact
+2023-08-13 19:48:00 INFO is repo sourced job
+2023-08-13 19:48:00 INFO adding wandb-job metadata file
+2023-08-13 19:48:00 INFO send defer: 9
+2023-08-13 19:48:00 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\output.log
+2023-08-13 19:48:03 INFO Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmp27j3b90x
+2023-08-13 19:48:03 INFO Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpj0w_wt1z
+2023-08-13 19:48:05 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNDIz', 'digest': '19f8d5eef6f38420e928835450573dc8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': None}, 'version': 'latest'}
+2023-08-13 19:48:05 INFO handle sender defer: 9
+2023-08-13 19:48:05 INFO shutting down directory watcher
+2023-08-13 19:48:05 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files
+2023-08-13 19:48:05 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:48:05 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\config.yaml config.yaml
+2023-08-13 19:48:05 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\output.log output.log
+2023-08-13 19:48:05 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\requirements.txt requirements.txt
+2023-08-13 19:48:05 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:48:05 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:48:05 INFO send defer: 10
+2023-08-13 19:48:05 INFO handle sender defer: 10
+2023-08-13 19:48:05 INFO shutting down file pusher
+2023-08-13 19:48:05 INFO shutting down sender
+2023-08-13 19:48:05 INFO shutting down file pusher
+2023-08-13 19:48:05 INFO waiting for file pusher
+2023-08-13 19:48:06 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\config.yaml
+2023-08-13 19:48:06 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\output.log
+2023-08-13 19:48:07 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\wandb-summary.json
+2023-08-13 19:48:07 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_175648-brrx30vv\files\requirements.txt
+2023-08-13 19:48:07 INFO send defer: 11
+2023-08-13 19:48:07 INFO file stream finish called
+2023-08-13 19:48:09 INFO file stream finish is done
+2023-08-13 19:48:09 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\run-kt3pwp9n.wandb
+2023-08-13 19:48:10 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files
+2023-08-13 19:48:10 INFO run started: kt3pwp9n with start time 1691937053.465542
+2023-08-13 19:48:10 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:48:11 INFO updated run: kt3pwp9n
+2023-08-13 19:48:11 INFO updated run: kt3pwp9n
+2023-08-13 19:48:11 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:11 INFO handling exit code: 1
+2023-08-13 19:48:11 INFO handling runtime: 1
+2023-08-13 19:48:11 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:11 INFO send defer
+2023-08-13 19:48:11 INFO handle sender defer: 0
+2023-08-13 19:48:11 INFO send defer: 1
+2023-08-13 19:48:11 INFO handle sender defer: 1
+2023-08-13 19:48:11 INFO send defer: 2
+2023-08-13 19:48:11 INFO handle sender defer: 2
+2023-08-13 19:48:11 INFO send defer: 3
+2023-08-13 19:48:11 INFO handle sender defer: 3
+2023-08-13 19:48:11 INFO send defer: 4
+2023-08-13 19:48:11 INFO handle sender defer: 4
+2023-08-13 19:48:11 INFO send defer: 5
+2023-08-13 19:48:11 INFO handle sender defer: 5
+2023-08-13 19:48:11 INFO send defer: 6
+2023-08-13 19:48:11 INFO handle sender defer: 6
+2023-08-13 19:48:11 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\config.yaml
+2023-08-13 19:48:11 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\wandb-summary.json
+2023-08-13 19:48:11 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\output.log
+2023-08-13 19:48:11 INFO send defer: 7
+2023-08-13 19:48:11 INFO handle sender defer: 7
+2023-08-13 19:48:12 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmp6ww6m04iwandb\pdx7tbc3-wandb-metadata.json
+2023-08-13 19:48:12 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\config.yaml
+2023-08-13 19:48:13 INFO send defer: 8
+2023-08-13 19:48:13 INFO handle sender defer: 8
+2023-08-13 19:48:13 INFO Attempting to build job artifact
+2023-08-13 19:48:13 INFO is repo sourced job
+2023-08-13 19:48:13 INFO adding wandb-job metadata file
+2023-08-13 19:48:13 INFO send defer: 9
+2023-08-13 19:48:13 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\output.log
+2023-08-13 19:48:14 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNDIz', 'digest': '19f8d5eef6f38420e928835450573dc8', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNDIz', 'versionIndex': 0}}, 'version': 'v0'}
+2023-08-13 19:48:14 INFO handle sender defer: 9
+2023-08-13 19:48:14 INFO shutting down directory watcher
+2023-08-13 19:48:15 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files
+2023-08-13 19:48:15 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:48:15 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\config.yaml config.yaml
+2023-08-13 19:48:15 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\output.log output.log
+2023-08-13 19:48:15 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\requirements.txt requirements.txt
+2023-08-13 19:48:15 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:48:15 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:48:15 INFO send defer: 10
+2023-08-13 19:48:15 INFO handle sender defer: 10
+2023-08-13 19:48:15 INFO shutting down file pusher
+2023-08-13 19:48:15 INFO shutting down sender
+2023-08-13 19:48:15 INFO shutting down file pusher
+2023-08-13 19:48:15 INFO waiting for file pusher
+2023-08-13 19:48:16 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\config.yaml
+2023-08-13 19:48:17 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\output.log
+2023-08-13 19:48:17 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\requirements.txt
+2023-08-13 19:48:17 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180053-kt3pwp9n\files\wandb-summary.json
+2023-08-13 19:48:17 INFO send defer: 11
+2023-08-13 19:48:17 INFO file stream finish called
+2023-08-13 19:48:19 INFO file stream finish is done
+2023-08-13 19:48:19 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\run-6ah4hwbo.wandb
+2023-08-13 19:48:20 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files
+2023-08-13 19:48:20 INFO run started: 6ah4hwbo with start time 1691937375.895885
+2023-08-13 19:48:20 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:48:20 INFO updated run: 6ah4hwbo
+2023-08-13 19:48:21 INFO updated run: 6ah4hwbo
+2023-08-13 19:48:21 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:21 INFO handling exit code: 1
+2023-08-13 19:48:21 INFO handling runtime: 266
+2023-08-13 19:48:21 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:21 INFO send defer
+2023-08-13 19:48:21 INFO handle sender defer: 0
+2023-08-13 19:48:21 INFO send defer: 1
+2023-08-13 19:48:21 INFO handle sender defer: 1
+2023-08-13 19:48:21 INFO send defer: 2
+2023-08-13 19:48:21 INFO handle sender defer: 2
+2023-08-13 19:48:21 INFO send defer: 3
+2023-08-13 19:48:21 INFO handle sender defer: 3
+2023-08-13 19:48:21 INFO send defer: 4
+2023-08-13 19:48:21 INFO handle sender defer: 4
+2023-08-13 19:48:21 INFO send defer: 5
+2023-08-13 19:48:21 INFO handle sender defer: 5
+2023-08-13 19:48:21 INFO send defer: 6
+2023-08-13 19:48:21 INFO handle sender defer: 6
+2023-08-13 19:48:21 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\wandb-summary.json
+2023-08-13 19:48:21 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\config.yaml
+2023-08-13 19:48:21 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\output.log
+2023-08-13 19:48:21 INFO send defer: 7
+2023-08-13 19:48:21 INFO handle sender defer: 7
+2023-08-13 19:48:22 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmpfz7728x2wandb\0iijzbaq-wandb-metadata.json
+2023-08-13 19:48:22 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\config.yaml
+2023-08-13 19:48:23 INFO send defer: 8
+2023-08-13 19:48:23 INFO handle sender defer: 8
+2023-08-13 19:48:23 INFO Attempting to build job artifact
+2023-08-13 19:48:23 INFO is repo sourced job
+2023-08-13 19:48:23 INFO adding wandb-job metadata file
+2023-08-13 19:48:23 INFO send defer: 9
+2023-08-13 19:48:23 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\output.log
+2023-08-13 19:48:25 INFO Skipped uploading C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpyxzylvn2
+2023-08-13 19:48:26 INFO Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpv44vt5k7
+2023-08-13 19:48:28 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNTky', 'digest': '0fa6ae74800500d5d67a3ae3d39fea6c', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNDIz', 'versionIndex': 0}}, 'version': 'latest'}
+2023-08-13 19:48:28 INFO handle sender defer: 9
+2023-08-13 19:48:28 INFO shutting down directory watcher
+2023-08-13 19:48:29 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files
+2023-08-13 19:48:29 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:48:29 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\config.yaml config.yaml
+2023-08-13 19:48:29 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\output.log output.log
+2023-08-13 19:48:29 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\requirements.txt requirements.txt
+2023-08-13 19:48:29 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:48:29 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:48:29 INFO send defer: 10
+2023-08-13 19:48:29 INFO handle sender defer: 10
+2023-08-13 19:48:29 INFO shutting down file pusher
+2023-08-13 19:48:29 INFO shutting down sender
+2023-08-13 19:48:29 INFO shutting down file pusher
+2023-08-13 19:48:29 INFO waiting for file pusher
+2023-08-13 19:48:30 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\output.log
+2023-08-13 19:48:30 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\config.yaml
+2023-08-13 19:48:30 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\wandb-summary.json
+2023-08-13 19:48:31 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_180615-6ah4hwbo\files\requirements.txt
+2023-08-13 19:48:31 INFO send defer: 11
+2023-08-13 19:48:31 INFO file stream finish called
+2023-08-13 19:48:33 INFO file stream finish is done
+2023-08-13 19:48:33 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\run-6k56gdrb.wandb
+2023-08-13 19:48:34 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files
+2023-08-13 19:48:34 INFO run started: 6k56gdrb with start time 1691937715.484999
+2023-08-13 19:48:34 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:48:34 INFO updated run: 6k56gdrb
+2023-08-13 19:48:34 INFO updated run: 6k56gdrb
+2023-08-13 19:48:35 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:35 INFO handling exit code: 0
+2023-08-13 19:48:35 INFO handling runtime: 277
+2023-08-13 19:48:35 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:35 INFO send defer
+2023-08-13 19:48:35 INFO handle sender defer: 0
+2023-08-13 19:48:35 INFO send defer: 1
+2023-08-13 19:48:35 INFO handle sender defer: 1
+2023-08-13 19:48:35 INFO send defer: 2
+2023-08-13 19:48:35 INFO handle sender defer: 2
+2023-08-13 19:48:35 INFO send defer: 3
+2023-08-13 19:48:35 INFO handle sender defer: 3
+2023-08-13 19:48:35 INFO send defer: 4
+2023-08-13 19:48:35 INFO handle sender defer: 4
+2023-08-13 19:48:35 INFO send defer: 5
+2023-08-13 19:48:35 INFO handle sender defer: 5
+2023-08-13 19:48:35 INFO send defer: 6
+2023-08-13 19:48:35 INFO handle sender defer: 6
+2023-08-13 19:48:35 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\config.yaml
+2023-08-13 19:48:35 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\wandb-summary.json
+2023-08-13 19:48:35 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\output.log
+2023-08-13 19:48:35 INFO send defer: 7
+2023-08-13 19:48:35 INFO handle sender defer: 7
+2023-08-13 19:48:36 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmpfxxl0g8hwandb\h7c384em-wandb-metadata.json
+2023-08-13 19:48:36 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\config.yaml
+2023-08-13 19:48:37 INFO send defer: 8
+2023-08-13 19:48:37 INFO handle sender defer: 8
+2023-08-13 19:48:37 INFO Attempting to build job artifact
+2023-08-13 19:48:37 INFO is repo sourced job
+2023-08-13 19:48:37 INFO adding wandb-job metadata file
+2023-08-13 19:48:37 INFO send defer: 9
+2023-08-13 19:48:37 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\output.log
+2023-08-13 19:48:38 INFO Skipped uploading C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmp9qoxlrij
+2023-08-13 19:48:39 INFO Uploaded file C:\Users\98914\AppData\Local\wandb\wandb\artifacts\staging\tmpwxf1mvvp
+2023-08-13 19:48:41 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'digest': 'f25bb581f717664848d31cc9d0246485', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNTky', 'versionIndex': 1}}, 'version': 'latest'}
+2023-08-13 19:48:41 INFO handle sender defer: 9
+2023-08-13 19:48:41 INFO shutting down directory watcher
+2023-08-13 19:48:42 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files
+2023-08-13 19:48:42 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:48:42 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\config.yaml config.yaml
+2023-08-13 19:48:42 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\output.log output.log
+2023-08-13 19:48:42 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\requirements.txt requirements.txt
+2023-08-13 19:48:42 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:48:42 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:48:42 INFO send defer: 10
+2023-08-13 19:48:42 INFO handle sender defer: 10
+2023-08-13 19:48:42 INFO shutting down file pusher
+2023-08-13 19:48:42 INFO shutting down sender
+2023-08-13 19:48:42 INFO shutting down file pusher
+2023-08-13 19:48:42 INFO waiting for file pusher
+2023-08-13 19:48:43 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\config.yaml
+2023-08-13 19:48:43 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\output.log
+2023-08-13 19:48:43 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\wandb-summary.json
+2023-08-13 19:48:43 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181155-6k56gdrb\files\requirements.txt
+2023-08-13 19:48:44 INFO send defer: 11
+2023-08-13 19:48:44 INFO file stream finish called
+2023-08-13 19:48:46 INFO file stream finish is done
+2023-08-13 19:48:46 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\run-ibsgaybl.wandb
+2023-08-13 19:48:47 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files
+2023-08-13 19:48:47 INFO run started: ibsgaybl with start time 1691938156.304455
+2023-08-13 19:48:47 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:48:48 INFO updated run: ibsgaybl
+2023-08-13 19:48:48 INFO updated run: ibsgaybl
+2023-08-13 19:48:48 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:48 INFO handling exit code: 1
+2023-08-13 19:48:48 INFO handling runtime: 3
+2023-08-13 19:48:48 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:48 INFO send defer
+2023-08-13 19:48:48 INFO handle sender defer: 0
+2023-08-13 19:48:48 INFO send defer: 1
+2023-08-13 19:48:48 INFO handle sender defer: 1
+2023-08-13 19:48:48 INFO send defer: 2
+2023-08-13 19:48:48 INFO handle sender defer: 2
+2023-08-13 19:48:48 INFO send defer: 3
+2023-08-13 19:48:48 INFO handle sender defer: 3
+2023-08-13 19:48:48 INFO send defer: 4
+2023-08-13 19:48:48 INFO handle sender defer: 4
+2023-08-13 19:48:48 INFO send defer: 5
+2023-08-13 19:48:48 INFO handle sender defer: 5
+2023-08-13 19:48:48 INFO send defer: 6
+2023-08-13 19:48:48 INFO handle sender defer: 6
+2023-08-13 19:48:48 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\wandb-summary.json
+2023-08-13 19:48:48 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\config.yaml
+2023-08-13 19:48:48 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\output.log
+2023-08-13 19:48:48 INFO send defer: 7
+2023-08-13 19:48:48 INFO handle sender defer: 7
+2023-08-13 19:48:49 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\config.yaml
+2023-08-13 19:48:50 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmp8bqpw2n4wandb\kmdbe482-wandb-metadata.json
+2023-08-13 19:48:50 INFO send defer: 8
+2023-08-13 19:48:50 INFO handle sender defer: 8
+2023-08-13 19:48:50 INFO Attempting to build job artifact
+2023-08-13 19:48:50 INFO is repo sourced job
+2023-08-13 19:48:50 INFO adding wandb-job metadata file
+2023-08-13 19:48:50 INFO send defer: 9
+2023-08-13 19:48:50 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\output.log
+2023-08-13 19:48:52 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNDIz', 'digest': '19f8d5eef6f38420e928835450573dc8', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'versionIndex': 2}}, 'version': 'v0'}
+2023-08-13 19:48:52 INFO handle sender defer: 9
+2023-08-13 19:48:52 INFO shutting down directory watcher
+2023-08-13 19:48:53 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files
+2023-08-13 19:48:53 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:48:53 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\config.yaml config.yaml
+2023-08-13 19:48:53 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\output.log output.log
+2023-08-13 19:48:53 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\requirements.txt requirements.txt
+2023-08-13 19:48:53 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:48:53 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:48:53 INFO send defer: 10
+2023-08-13 19:48:53 INFO handle sender defer: 10
+2023-08-13 19:48:53 INFO shutting down file pusher
+2023-08-13 19:48:53 INFO shutting down sender
+2023-08-13 19:48:53 INFO shutting down file pusher
+2023-08-13 19:48:53 INFO waiting for file pusher
+2023-08-13 19:48:54 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\config.yaml
+2023-08-13 19:48:54 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\output.log
+2023-08-13 19:48:55 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\requirements.txt
+2023-08-13 19:48:56 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_181916-ibsgaybl\files\wandb-summary.json
+2023-08-13 19:48:56 INFO send defer: 11
+2023-08-13 19:48:56 INFO file stream finish called
+2023-08-13 19:48:57 INFO file stream finish is done
+2023-08-13 19:48:57 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\run-sbendbk1.wandb
+2023-08-13 19:48:59 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files
+2023-08-13 19:48:59 INFO run started: sbendbk1 with start time 1691938698.555903
+2023-08-13 19:48:59 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:48:59 INFO updated run: sbendbk1
+2023-08-13 19:48:59 INFO updated run: sbendbk1
+2023-08-13 19:48:59 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:59 INFO handling exit code: 1
+2023-08-13 19:48:59 INFO handling runtime: 7
+2023-08-13 19:48:59 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:48:59 INFO send defer
+2023-08-13 19:48:59 INFO handle sender defer: 0
+2023-08-13 19:48:59 INFO send defer: 1
+2023-08-13 19:48:59 INFO handle sender defer: 1
+2023-08-13 19:48:59 INFO send defer: 2
+2023-08-13 19:48:59 INFO handle sender defer: 2
+2023-08-13 19:48:59 INFO send defer: 3
+2023-08-13 19:48:59 INFO handle sender defer: 3
+2023-08-13 19:48:59 INFO send defer: 4
+2023-08-13 19:48:59 INFO handle sender defer: 4
+2023-08-13 19:48:59 INFO send defer: 5
+2023-08-13 19:48:59 INFO handle sender defer: 5
+2023-08-13 19:48:59 INFO send defer: 6
+2023-08-13 19:48:59 INFO handle sender defer: 6
+2023-08-13 19:49:00 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\config.yaml
+2023-08-13 19:49:00 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\wandb-summary.json
+2023-08-13 19:49:00 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\output.log
+2023-08-13 19:49:00 INFO send defer: 7
+2023-08-13 19:49:00 INFO handle sender defer: 7
+2023-08-13 19:49:01 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\config.yaml
+2023-08-13 19:49:01 INFO send defer: 8
+2023-08-13 19:49:01 INFO handle sender defer: 8
+2023-08-13 19:49:01 INFO Attempting to build job artifact
+2023-08-13 19:49:01 INFO is repo sourced job
+2023-08-13 19:49:01 INFO adding wandb-job metadata file
+2023-08-13 19:49:01 INFO send defer: 9
+2023-08-13 19:49:02 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\output.log
+2023-08-13 19:49:02 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmp5x44ab_kwandb\1v0chep4-wandb-metadata.json
+2023-08-13 19:49:03 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNTky', 'digest': '0fa6ae74800500d5d67a3ae3d39fea6c', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'versionIndex': 2}}, 'version': 'v1'}
+2023-08-13 19:49:03 INFO handle sender defer: 9
+2023-08-13 19:49:03 INFO shutting down directory watcher
+2023-08-13 19:49:04 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files
+2023-08-13 19:49:04 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:49:04 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\config.yaml config.yaml
+2023-08-13 19:49:04 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\output.log output.log
+2023-08-13 19:49:04 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\requirements.txt requirements.txt
+2023-08-13 19:49:04 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:49:04 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:49:04 INFO send defer: 10
+2023-08-13 19:49:04 INFO handle sender defer: 10
+2023-08-13 19:49:04 INFO shutting down file pusher
+2023-08-13 19:49:04 INFO shutting down sender
+2023-08-13 19:49:04 INFO shutting down file pusher
+2023-08-13 19:49:04 INFO waiting for file pusher
+2023-08-13 19:49:04 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\output.log
+2023-08-13 19:49:05 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\requirements.txt
+2023-08-13 19:49:05 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\wandb-summary.json
+2023-08-13 19:49:05 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_182818-sbendbk1\files\config.yaml
+2023-08-13 19:49:05 INFO send defer: 11
+2023-08-13 19:49:06 INFO file stream finish called
+2023-08-13 19:49:07 INFO file stream finish is done
+2023-08-13 19:49:07 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\run-jdn0l0vm.wandb
+2023-08-13 19:49:08 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files
+2023-08-13 19:49:08 INFO run started: jdn0l0vm with start time 1691941794.154529
+2023-08-13 19:49:08 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:49:09 INFO updated run: jdn0l0vm
+2023-08-13 19:49:09 INFO updated run: jdn0l0vm
+2023-08-13 19:49:10 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\config.yaml
+2023-08-13 19:49:10 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:49:10 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\output.log
+2023-08-13 19:49:10 INFO handling exit code: 1
+2023-08-13 19:49:10 INFO handling runtime: 6
+2023-08-13 19:49:10 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:49:10 INFO send defer
+2023-08-13 19:49:10 INFO handle sender defer: 0
+2023-08-13 19:49:10 INFO send defer: 1
+2023-08-13 19:49:10 INFO handle sender defer: 1
+2023-08-13 19:49:10 INFO send defer: 2
+2023-08-13 19:49:10 INFO handle sender defer: 2
+2023-08-13 19:49:10 INFO send defer: 3
+2023-08-13 19:49:10 INFO handle sender defer: 3
+2023-08-13 19:49:10 INFO send defer: 4
+2023-08-13 19:49:10 INFO handle sender defer: 4
+2023-08-13 19:49:10 INFO send defer: 5
+2023-08-13 19:49:10 INFO handle sender defer: 5
+2023-08-13 19:49:10 INFO send defer: 6
+2023-08-13 19:49:10 INFO handle sender defer: 6
+2023-08-13 19:49:10 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmpp1zq6wm3wandb\5kqqe6r4-wandb-metadata.json
+2023-08-13 19:49:10 INFO send defer: 7
+2023-08-13 19:49:10 INFO handle sender defer: 7
+2023-08-13 19:49:11 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\config.yaml
+2023-08-13 19:49:11 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\wandb-summary.json
+2023-08-13 19:49:12 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\output.log
+2023-08-13 19:49:12 INFO send defer: 8
+2023-08-13 19:49:12 INFO handle sender defer: 8
+2023-08-13 19:49:12 INFO Attempting to build job artifact
+2023-08-13 19:49:12 INFO is repo sourced job
+2023-08-13 19:49:12 INFO adding wandb-job metadata file
+2023-08-13 19:49:12 INFO send defer: 9
+2023-08-13 19:49:13 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\output.log
+2023-08-13 19:49:14 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNTky', 'digest': '0fa6ae74800500d5d67a3ae3d39fea6c', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'versionIndex': 2}}, 'version': 'v1'}
+2023-08-13 19:49:14 INFO handle sender defer: 9
+2023-08-13 19:49:14 INFO shutting down directory watcher
+2023-08-13 19:49:14 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files
+2023-08-13 19:49:14 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:49:14 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\config.yaml config.yaml
+2023-08-13 19:49:14 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\output.log output.log
+2023-08-13 19:49:14 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\requirements.txt requirements.txt
+2023-08-13 19:49:14 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:49:14 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:49:14 INFO send defer: 10
+2023-08-13 19:49:14 INFO handle sender defer: 10
+2023-08-13 19:49:14 INFO shutting down file pusher
+2023-08-13 19:49:14 INFO shutting down sender
+2023-08-13 19:49:14 INFO shutting down file pusher
+2023-08-13 19:49:14 INFO waiting for file pusher
+2023-08-13 19:49:14 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\config.yaml
+2023-08-13 19:49:15 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\output.log
+2023-08-13 19:49:15 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\requirements.txt
+2023-08-13 19:49:15 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_191954-jdn0l0vm\files\wandb-summary.json
+2023-08-13 19:49:15 INFO send defer: 11
+2023-08-13 19:49:16 INFO file stream finish called
+2023-08-13 19:49:17 INFO file stream finish is done
+2023-08-13 19:49:17 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\run-ji15yjr4.wandb
+2023-08-13 19:49:18 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files
+2023-08-13 19:49:18 INFO run started: ji15yjr4 with start time 1691942197.736889
+2023-08-13 19:49:18 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:49:19 INFO updated run: ji15yjr4
+2023-08-13 19:49:19 INFO updated run: ji15yjr4
+2023-08-13 19:49:20 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\config.yaml
+2023-08-13 19:49:20 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\output.log
+2023-08-13 19:49:20 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:49:20 INFO handling exit code: 1
+2023-08-13 19:49:20 INFO handling runtime: 6
+2023-08-13 19:49:20 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:49:20 INFO send defer
+2023-08-13 19:49:20 INFO handle sender defer: 0
+2023-08-13 19:49:20 INFO send defer: 1
+2023-08-13 19:49:20 INFO handle sender defer: 1
+2023-08-13 19:49:20 INFO send defer: 2
+2023-08-13 19:49:20 INFO handle sender defer: 2
+2023-08-13 19:49:20 INFO send defer: 3
+2023-08-13 19:49:20 INFO handle sender defer: 3
+2023-08-13 19:49:20 INFO send defer: 4
+2023-08-13 19:49:20 INFO handle sender defer: 4
+2023-08-13 19:49:20 INFO send defer: 5
+2023-08-13 19:49:20 INFO handle sender defer: 5
+2023-08-13 19:49:20 INFO send defer: 6
+2023-08-13 19:49:20 INFO handle sender defer: 6
+2023-08-13 19:49:21 INFO send defer: 7
+2023-08-13 19:49:21 INFO handle sender defer: 7
+2023-08-13 19:49:21 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmpb_ezry_0wandb\sudl07tq-wandb-metadata.json
+2023-08-13 19:49:21 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\config.yaml
+2023-08-13 19:49:21 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\wandb-summary.json
+2023-08-13 19:49:22 INFO send defer: 8
+2023-08-13 19:49:22 INFO handle sender defer: 8
+2023-08-13 19:49:22 INFO Attempting to build job artifact
+2023-08-13 19:49:22 INFO is repo sourced job
+2023-08-13 19:49:22 INFO adding wandb-job metadata file
+2023-08-13 19:49:22 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\output.log
+2023-08-13 19:49:23 INFO send defer: 9
+2023-08-13 19:49:24 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNTky', 'digest': '0fa6ae74800500d5d67a3ae3d39fea6c', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'versionIndex': 2}}, 'version': 'v1'}
+2023-08-13 19:49:24 INFO handle sender defer: 9
+2023-08-13 19:49:24 INFO shutting down directory watcher
+2023-08-13 19:49:24 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files
+2023-08-13 19:49:24 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:49:24 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\config.yaml config.yaml
+2023-08-13 19:49:24 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\output.log output.log
+2023-08-13 19:49:24 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\requirements.txt requirements.txt
+2023-08-13 19:49:24 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:49:24 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:49:24 INFO send defer: 10
+2023-08-13 19:49:24 INFO handle sender defer: 10
+2023-08-13 19:49:24 INFO shutting down file pusher
+2023-08-13 19:49:24 INFO shutting down sender
+2023-08-13 19:49:24 INFO shutting down file pusher
+2023-08-13 19:49:24 INFO waiting for file pusher
+2023-08-13 19:49:25 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\config.yaml
+2023-08-13 19:49:26 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\output.log
+2023-08-13 19:49:26 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\wandb-summary.json
+2023-08-13 19:49:26 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_192637-ji15yjr4\files\requirements.txt
+2023-08-13 19:49:26 INFO send defer: 11
+2023-08-13 19:49:26 INFO file stream finish called
+2023-08-13 19:49:28 INFO file stream finish is done
+2023-08-13 19:49:28 INFO open for scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\run-8cqrvmwa.wandb
+2023-08-13 19:49:29 INFO watching files in: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files
+2023-08-13 19:49:29 INFO run started: 8cqrvmwa with start time 1691942934.201619
+2023-08-13 19:49:29 INFO saving file wandb-metadata.json with policy now
+2023-08-13 19:49:29 INFO updated run: 8cqrvmwa
+2023-08-13 19:49:30 INFO updated run: 8cqrvmwa
+2023-08-13 19:49:30 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:49:30 INFO handling exit code: 0
+2023-08-13 19:49:30 INFO handling runtime: 363
+2023-08-13 19:49:30 INFO saving file wandb-summary.json with policy end
+2023-08-13 19:49:30 INFO send defer
+2023-08-13 19:49:30 INFO handle sender defer: 0
+2023-08-13 19:49:30 INFO send defer: 1
+2023-08-13 19:49:30 INFO handle sender defer: 1
+2023-08-13 19:49:30 INFO send defer: 2
+2023-08-13 19:49:30 INFO handle sender defer: 2
+2023-08-13 19:49:30 INFO send defer: 3
+2023-08-13 19:49:30 INFO handle sender defer: 3
+2023-08-13 19:49:30 INFO send defer: 4
+2023-08-13 19:49:30 INFO handle sender defer: 4
+2023-08-13 19:49:30 INFO send defer: 5
+2023-08-13 19:49:30 INFO handle sender defer: 5
+2023-08-13 19:49:30 INFO send defer: 6
+2023-08-13 19:49:30 INFO handle sender defer: 6
+2023-08-13 19:49:30 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\config.yaml
+2023-08-13 19:49:30 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\wandb-summary.json
+2023-08-13 19:49:30 INFO file/dir created: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\output.log
+2023-08-13 19:49:30 INFO send defer: 7
+2023-08-13 19:49:30 INFO handle sender defer: 7
+2023-08-13 19:49:31 INFO Uploaded file C:\Users\98914\AppData\Local\Temp\tmpt3jshkszwandb\smx6yvrm-wandb-metadata.json
+2023-08-13 19:49:31 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\config.yaml
+2023-08-13 19:49:32 INFO send defer: 8
+2023-08-13 19:49:32 INFO handle sender defer: 8
+2023-08-13 19:49:32 INFO Attempting to build job artifact
+2023-08-13 19:49:32 INFO is repo sourced job
+2023-08-13 19:49:32 INFO adding wandb-job metadata file
+2023-08-13 19:49:32 INFO send defer: 9
+2023-08-13 19:49:32 INFO file/dir modified: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\output.log
+2023-08-13 19:49:33 INFO sent artifact job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py - {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'digest': 'f25bb581f717664848d31cc9d0246485', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_MohammadVahidiPro_2022-IJCV-TCL-fork.git_tcl-official-repo_evaluation.py', 'alias': 'v2'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkwMTg2MzQ3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQwODYxNjgz', 'versionIndex': 2}}, 'version': 'v2'}
+2023-08-13 19:49:33 INFO handle sender defer: 9
+2023-08-13 19:49:33 INFO shutting down directory watcher
+2023-08-13 19:49:33 INFO scan: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files
+2023-08-13 19:49:33 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\conda-environment.yaml conda-environment.yaml
+2023-08-13 19:49:33 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\config.yaml config.yaml
+2023-08-13 19:49:33 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\output.log output.log
+2023-08-13 19:49:33 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\requirements.txt requirements.txt
+2023-08-13 19:49:33 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\wandb-metadata.json wandb-metadata.json
+2023-08-13 19:49:33 INFO scan save: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\wandb-summary.json wandb-summary.json
+2023-08-13 19:49:33 INFO send defer: 10
+2023-08-13 19:49:33 INFO handle sender defer: 10
+2023-08-13 19:49:33 INFO shutting down file pusher
+2023-08-13 19:49:33 INFO shutting down sender
+2023-08-13 19:49:33 INFO shutting down file pusher
+2023-08-13 19:49:33 INFO waiting for file pusher
+2023-08-13 19:49:34 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\config.yaml
+2023-08-13 19:49:34 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\output.log
+2023-08-13 19:49:34 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\wandb-summary.json
+2023-08-13 19:49:35 INFO Uploaded file D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230813_193854-8cqrvmwa\files\requirements.txt
+2023-08-13 19:49:35 INFO send defer: 11
+2023-08-13 19:49:35 INFO file stream finish called
+2023-08-13 19:49:37 INFO file stream finish is done
+2023-08-19 22:40:41 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)'))': /api/4504800232407040/envelope/

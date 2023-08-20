@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\evaluation.py", line 85, in <module>
+    for line in f1:
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 5153: character maps to <undefined>

@@ -1,0 +1,72 @@
+wandb_version: 1
+
+dataset_dir:
+  desc: null
+  value: ./datasets/
+dataset:
+  desc: null
+  value: Biomedical
+class_num:
+  desc: null
+  value: 8
+feature_dim:
+  desc: null
+  value: 128
+eval_epoch:
+  desc: null
+  value: 1
+gpu:
+  desc: null
+  value: '0'
+num_workers:
+  desc: null
+  value: 8
+model_path:
+  desc: null
+  value: ./save/Biomedical/release-text/
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.4
+    cli_version: 0.15.8
+    framework: huggingface
+    huggingface_version: 4.29.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1691938698.555903
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 53
+      - 55
+      - 75
+      - 105
+      2:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 53
+      - 55
+      - 75
+      - 105
+      3:
+      - 4
+      - 16
+      - 17
+      - 18
+      - 23
+      - 37
+      - 42
+      4: 3.11.4
+      5: 0.15.8
+      6: 4.29.2
+      8:
+      - 3
+      - 5
+checkpoint_path:
+  desc: null
+  value: ./save/Biomedical/release-text/checkpoint_600_3_biomedical_tcl.tar
