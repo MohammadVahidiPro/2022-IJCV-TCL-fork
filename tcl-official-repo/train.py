@@ -105,7 +105,7 @@ def get_args_parser():
         "--start_epoch", default=0, type=int, help="start epoch"
     )
     parser.add_argument("--save_freq", default=50, type=int, help="saving frequency")
-    parser.add_argument("--num_workers", default=10, type=int) # 10
+    parser.add_argument("--num_workers", default=8, type=int) # 10
 
     return parser
 
