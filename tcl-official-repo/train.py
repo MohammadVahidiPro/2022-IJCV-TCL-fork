@@ -101,6 +101,7 @@ def get_args_parser():
         default=False,
         help="resume from checkpoint",
     )
+    parser.add_argument("--check_id", type=str, default="this")
     parser.add_argument(
         "--start_epoch", default=0, type=int, help="start epoch"
     )
@@ -121,15 +122,18 @@ def update_args(args):
         args.model_path = "save/Stackoverflow/"
     else:
         raise NotImplementedError
+    
+    if args.check_id == "this":
+        args.check_id = run.id
     embed_path = Path(args.model_path).resolve() / run.id / 'embed'
     label_path = Path(args.model_path).resolve() / run.id / 'label'
     checkpoint_path = Path(args.model_path).resolve() / run.id / 'checkpoints'
-
+    best_check_path = Path(args.model_path).resolve() / args.check_id / "checkpoints" / "best_model_avg.tar"
     embed_path.mkdir(parents=True, exist_ok=True)
     label_path.mkdir(parents=True, exist_ok=True)
     checkpoint_path.mkdir(parents=True, exist_ok=True)
 
-    return checkpoint_path ,embed_path, label_path
+    return best_check_path, checkpoint_path ,embed_path, label_path
     
 class DatasetIterater(data.Dataset):
     def __init__(self, texta, textb):
@@ -197,8 +201,8 @@ def perform_augmentation(args):
         for i in range(len(data)):
             tmp.append(data[i])
             if (i + 1) % internal == 0 or (i + 1) == len(data):
-                if (i + 1) % 2000 == 0:
-                    print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
+                # if (i + 1) % 2000 == 0:
+                    # print("roberta aug: the iter {} / {}".format(i // 2000, np.ceil(len(data) / 2000)))
                 aug2.extend(aug_robert.augment(tmp))
                 tmp.clear()
     # print(len(data))
@@ -267,12 +271,13 @@ if __name__ == "__main__":
     run = wb.init(project="tcl-text", mode=args.wb_mode)
     run.tags = [args.dataset.lower()[:4], str(args.epochs), str(args.start_epoch)]
     run.name = "|".join(run.tags)
-    checkpoint_path ,embed_path, label_path = update_args(args)
+    best_check_path, checkpoint_path ,embed_path, label_path = update_args(args)
 
     run.config.update(args)
     import pprint
     pprint.pprint(args)
-    print(checkpoint_path.__str__(), embed_path.__str__(), label_path.__str__(), sep='\n')
+    print("wandb run id: ", run.id)
+    print(best_check_path.__str__(), checkpoint_path.__str__(), embed_path.__str__(), label_path.__str__(), sep='\n')
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     os.environ["MODEL_DIR"] = '../model'
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
@@ -299,13 +304,22 @@ if __name__ == "__main__":
                                       lr=args.lr_head,
                                       weight_decay=args.weight_decay)
 
-    if args.resume:
-        raise NotImplementedError
-        model_fp = os.path.join(args.model_path, "checkpoint_{}.tar".format(args.start_epoch))
-        checkpoint = torch.load(model_fp)
-        model.load_state_dict(checkpoint['net'])
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        args.start_epoch = checkpoint['epoch'] + 1
+    if args.resume == 'True':
+        # model_fp = os.path.join(args.model_path, "checkpoint_{}.tar".format(args.start_epoch))
+        if best_check_path.exists():
+            print("loading checkpoint...")
+            checkpoint = torch.load(best_check_path.__str__())
+            model.load_state_dict(checkpoint['net'])
+            optimizer.load_state_dict(checkpoint['optimizer'])
+            args.start_epoch = checkpoint['epoch'] + 1
+            run.config.update(args)
+            print("resuming from epoch ", args.start_epoch)
+
+        print("checkpoint path doesn't exist")
+        print("training from scratch")
+
+    else:
+        print("training from scratch")
 
     # loss
     loss_device = torch.device("cuda")
@@ -377,7 +391,6 @@ if __name__ == "__main__":
         if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
             best = False
             embeds, labels, score = evaluation(dataset=evaldataset, model=model, device='cuda', epoch=epoch + 1, args=args)
-            print()
             if score["avg"] > best_score["avg"]:
                 best = True
                 best_score = score.copy()
@@ -391,7 +404,7 @@ if __name__ == "__main__":
             save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
 
         if (epoch + 1) % 10 == 0:
-            save_model_10(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
+            save_model_10(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id)
 
         # print(f"Epoch [{epoch+1}/{args.epochs}]\t Loss: {loss_epoch / len(data_loader)}")
     dif = (time.time() - t) / 60
