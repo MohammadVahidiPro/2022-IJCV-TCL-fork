@@ -102,7 +102,7 @@ def get_args_parser():
         default=True,
         help="resume from checkpoint",
     )
-    parser.add_argument("--save_freq", default=50, type=int, help="saving frequency")
+    parser.add_argument("--save_freq", default=25, type=int, help="saving frequency")
     parser.add_argument("--num_workers", default=8, type=int)
 
     return parser
@@ -355,7 +355,7 @@ if __name__ == "__main__":
     np.save(file=e_path.__str__(), arr=reprs) 
     np.save(file=l_path.__str__(), arr=labels)
     print("### start training...")
-    
+    best_conf_score = None
     wb.watch(model)
     t = time.time()
     for epoch in range(args.start_epoch, args.epochs):
@@ -382,14 +382,24 @@ if __name__ == "__main__":
         pseudo_index = (pseudo_labels != -1).cpu()
         pseudo_num = pseudo_index.sum()
         if pseudo_num > 0:
-            score, _ = cluster_utils.clustering_metric(labels[pseudo_index],
+            conf_scores, _ = cluster_utils.clustering_metric(labels[pseudo_index],
                                                        pseudo_labels[pseudo_index].cpu().numpy(),
                                                        args.class_num)
-            print('pseudo scores NMI = {:.4f} ARI = {:.4f} F = {:.4f} ACC = {:.4f}'.format(score['NMI'],
-                                                                             score['ARI'],
-                                                                             score['f_measure'],
-                                                                             score['accuracy']))
-        
+            conf_scores["avg"] = (conf_scores["acc"] + conf_scores["nmi"]) / 2
+            print('pseudo CONFIDENCE scores F = {:.4f} ARI = {:.4f} NMI = {:.4f} ACC = {:.4f} AVG = {:.4f}'.format(conf_scores['f_measure'],
+                                                                                                                    conf_scores['ari'],
+                                                                                                                    conf_scores['nmi'],
+                                                                                                                    conf_scores['acc'],
+                                                                                                                    conf_scores['avg']))
+            
+            conf_scores["epoch"] = conf_scores
+            if best_conf_score is None or best_conf_score['avg'] < conf_scores['avg']:
+                best_conf_score = conf_scores.copy()
+                print("////////////////// best conf \ \ \ \ \ \ \ ")
+                save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=True, conf=True)
+                wb.log({f'best-conf/{k}': v for k, v in conf_scores.items()})
+                
+            wb.log({f"conf/{k}": v for k, v in conf_scores.items()})
         last_pseudo_num = pseudo_num
 
         if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
@@ -414,8 +424,9 @@ if __name__ == "__main__":
     run.summary.update({"t(m)/training-total": dif/60})
     run.summary.update({"t(s)/training-total": dif})
 
-    print("first scores:", first_score)
-    print("best scores:",  best_score)
+    print("first eval scores:", first_score)
+    print("best eval scores:",  best_score)
+    print("best confidence score: ", best_conf_score)
     run.summary.update({f"first/{k}": v for k, v in first_score.items()})
     run.summary.update({f"top/{k}": v for k, v in best_score.items()})    
     

@@ -2,7 +2,14 @@ import os
 import torch
 
 
-def save_model(args, model, optimizer, optimizer_head, current_epoch, path, id, best=False):
+def save_model(args, model, optimizer, optimizer_head, current_epoch, path, id, best=False, conf=False):
+    if conf and best:
+        best_path = path / "best_model_confidence_avg.tar"
+        # out = os.path.join(args.model_path, "checkpoint_{}.tar".format(current_epoch))
+        state = {'net': model.state_dict(), 'optimizer': optimizer.state_dict(), 'optimizer_head': optimizer_head.state_dict(), 'epoch': current_epoch}
+        torch.save(obj=state, f=best_path)
+        return
+
     check_path = path / f"checkpoint_{current_epoch}.tar"
     # out = os.path.join(args.model_path, "checkpoint_{}.tar".format(current_epoch))
     state = {'net': model.state_dict(), 'optimizer': optimizer.state_dict(), 'optimizer_head': optimizer_head.state_dict(), 'epoch': current_epoch}
@@ -13,6 +20,8 @@ def save_model(args, model, optimizer, optimizer_head, current_epoch, path, id, 
         # out = os.path.join(args.model_path, "checkpoint_{}.tar".format(current_epoch))
         state = {'net': model.state_dict(), 'optimizer': optimizer.state_dict(), 'optimizer_head': optimizer_head.state_dict(), 'epoch': current_epoch}
         torch.save(obj=state, f=best_path)
+
+   
 
 def save_model_10(args, model, optimizer, optimizer_head, current_epoch, path, id):
     check_path = path / f"last_10_epoch.tar"
