@@ -23,6 +23,7 @@ class DatasetIterater(data.Dataset):
 
 from tqdm import tqdm
 
+
 def inference(loader, model, device):
     model.eval()
     feature_vector = []
@@ -39,11 +40,36 @@ def inference(loader, model, device):
         labels_vector.extend(np.array(labels))
         if False and step % 20 == 0:
             print(f"Step [{step}/{len(loader)}]\t Computing features...")
-    print()
     feature_vector = np.array(feature_vector)
     labels_vector = np.array(labels_vector)
     #print("Features shape {}".format(feature_vector.shape))
     return feature_vector, labels_vector
+
+def inference2(loader, model, device):
+    model.eval()
+    feature_vector = []
+    labels_vector = []
+    reprs_matrix = []
+    # tq = tqdm(loader)
+    for step, (x, y) in enumerate(loader):
+        with torch.no_grad():
+            clusters, reprs = model.forward_cluster_feature_return(x)
+        clusters = clusters.detach()
+        reprs = reprs.detach().cpu()
+        feature_vector.extend(clusters.cpu().detach().numpy())
+        reprs_matrix.append(reprs)
+        labels = []
+        for i in y:
+            labels.append(int(i))
+        labels_vector.extend(np.array(labels))
+        if False and step % 20 == 0:
+            print(f"Step [{step}/{len(loader)}]\t Computing features...")
+    feature_vector = np.array(feature_vector)
+    labels_vector = np.array(labels_vector)
+    reprs_matrix = torch.cat(reprs_matrix, dim=0).numpy()
+    #print("Features shape {}".format(feature_vector.shape))
+    return feature_vector, labels_vector , reprs_matrix
+
 
 
 if __name__ == "__main__":

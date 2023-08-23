@@ -7,7 +7,7 @@ from utils.save_model import save_model, save_model_10
 from torch.utils import data
 from sentence_transformers import SentenceTransformer
 from EDA.augment import gen_eda
-from evaluation import inference
+from evaluation import inference2
 from utils import cluster_utils
 import os
 import itertools
@@ -29,9 +29,9 @@ def timer(func):
         dif_min = round(dif / 60, 2)
         name = func.__name__
         
-        if global_step < 5:
+        if global_step < 20:
             print(f"## timer step {global_step} ## {name}: {dif_min} MIN")
-        if global_step < 5 or global_step % 50:
+        if global_step < 20 or global_step % 20:
             wb.log({f"t(m)/{name}": dif_min, f"t(s)/{name}": dif})
         return results
     return wrapper
@@ -42,7 +42,7 @@ def get_args_parser():
     parser.add_argument(
         "--batch_size", default=256, type=int, help="Batch size per GPU"
     ) # 128
-    parser.add_argument("--epochs", default=500, type=int)
+    parser.add_argument("--epochs", default=510, type=int)
     parser.add_argument("--gpu", default='0', type=str)
     parser.add_argument("--wb_mode", default="offline", type=str)
 
@@ -98,12 +98,12 @@ def get_args_parser():
     parser.add_argument("--seed", default=0, type=int)
     parser.add_argument(
         "--resume",
-        default=False,
+        default="True",
         help="resume from checkpoint",
     )
     parser.add_argument("--check_id", type=str, default="this")
     parser.add_argument(
-        "--start_epoch", default=0, type=int, help="start epoch"
+        "--start_epoch", default=500, type=int, help="start epoch"
     )
     parser.add_argument("--save_freq", default=50, type=int, help="saving frequency")
     parser.add_argument("--num_workers", default=8, type=int) # 10
@@ -250,7 +250,7 @@ def evaluation(dataset, model, device, epoch, args):
         num_workers=args.num_workers,
     )
     # print("### Creating features from model ###")
-    X, Y = inference(data_loader, model, device)
+    X, Y, reprs = inference2(data_loader, model, device)
     Y = Y - 1
     # print(np.min(X), np.min(Y))
 
@@ -262,7 +262,7 @@ def evaluation(dataset, model, device, epoch, args):
     print(                          '### epoch {}### [f:{:.2f}....ari:{:.2f}....nmi:{:.2f}....acc:{:.2f}....avg:{:.2f}]'
           .format(epoch, score['f_measure'] * 100, score['ari'] * 100, score['nmi'] * 100, score['acc'] * 100, score['avg'] * 100))
     wb.log(score)
-    return X, Y, score
+    return X, Y, reprs, score
 
 if __name__ == "__main__":
     parser = get_args_parser()
@@ -314,10 +314,9 @@ if __name__ == "__main__":
             args.start_epoch = checkpoint['epoch'] + 1
             run.config.update(args)
             print("resuming from epoch ", args.start_epoch)
-
-        print("checkpoint path doesn't exist")
-        print("training from scratch")
-
+        else:
+            print("checkpoint path doesn't exist")
+            print("training from scratch")
     else:
         print("training from scratch")
 
@@ -335,27 +334,13 @@ if __name__ == "__main__":
             label.append(line.strip('\n'))
     evaldataset = EvalDatasetIterater(data, label)
 
-    
-    
-    # pipeline
-    # prepare data
-    # data_dir = args.dataset_dir
-    # print("### start augmentation")
-    # aug1, aug2 = perform_augmentation(args=args)
-    # dataset = DatasetIterater(aug1, aug2)
-    # data_loader = torch.utils.data.DataLoader(
-    #     dataset,
-    #     batch_size=args.batch_size,
-    #     shuffle=True,
-    #     drop_last=True,
-    #     num_workers=args.num_workers
-    # )
-    print("### augmentation over start first eval")
-    embeds, labels, first_score = evaluation(dataset=evaldataset, model=model, device='cuda', epoch=-1, args=args)
+    print("### initial eval")
+    _, labels, reprs, first_score = evaluation(dataset=evaldataset, model=model, device='cuda', epoch=-1, args=args)
+    print("reprs.shape=========== ", reprs.shape)
     best_score = first_score.copy()
     e_path = embed_path  / f"iter_{-1}_embeds.npy"
     l_path = label_path  / f"iter_{-1}_labels.npy"
-    np.save(file=e_path.__str__(), arr=embeds) 
+    np.save(file=e_path.__str__(), arr=reprs) 
     np.save(file=l_path.__str__(), arr=labels)
     print("### start training...")
     
@@ -369,6 +354,7 @@ if __name__ == "__main__":
         # print("### start augmentation")
         aug1, aug2 = perform_augmentation(args=args)
         dataset = DatasetIterater(aug1, aug2)
+        
         data_loader = torch.utils.data.DataLoader(
             dataset,
             batch_size=args.batch_size,
@@ -377,20 +363,21 @@ if __name__ == "__main__":
             num_workers=args.num_workers
         )
 
-        data_loader = torch.utils.data.DataLoader(
-        dataset,
-        batch_size=args.batch_size,
-        shuffle=True,
-        drop_last=True,
-        num_workers=args.num_workers
-        )
+        # data_loader = torch.utils.data.DataLoader(
+        # dataset,
+        # batch_size=args.batch_size,
+        # shuffle=True,
+        # drop_last=True,
+        # num_workers=args.num_workers
+        # )
+        
         loss_epoch = train_epoch(data_loader,optimizer, criterion)
         wb.log({"loss": loss_epoch, "epoch": epoch})
 
 
         if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
             best = False
-            embeds, labels, score = evaluation(dataset=evaldataset, model=model, device='cuda', epoch=epoch + 1, args=args)
+            embeds, labels, reprs, score = evaluation(dataset=evaldataset, model=model, device='cuda', epoch=epoch + 1, args=args)
             if score["avg"] > best_score["avg"]:
                 best = True
                 best_score = score.copy()
@@ -399,7 +386,7 @@ if __name__ == "__main__":
 
             e_path = embed_path  / f"iter_{epoch + 1}_embeds.npy"
             l_path = label_path  / f"iter_{epoch + 1}_labels.npy"
-            np.save(file=e_path.__str__(), arr=embeds) 
+            np.save(file=e_path.__str__(), arr=reprs) 
             np.save(file=l_path.__str__(), arr=labels)
             save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=best)
 
