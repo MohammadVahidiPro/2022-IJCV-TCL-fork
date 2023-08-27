@@ -74,7 +74,7 @@ class Network(nn.Module):
         c = self.cluster_projector(h)
         c = torch.argmax(c, dim=1)
         return c
-    
+    # mine
     def forward_cluster_feature_return(self, x):
         h = self.backbone.encode(x, batch_size=len(x),
                                  convert_to_numpy=False,

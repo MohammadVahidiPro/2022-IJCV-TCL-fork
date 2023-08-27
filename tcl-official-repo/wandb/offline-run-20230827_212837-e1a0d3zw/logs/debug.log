@@ -1,0 +1,28 @@
+2023-08-27 21:28:37,630 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2023-08-27 21:28:37,630 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Configure stats pid to 20792
+2023-08-27 21:28:37,630 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Loading settings from C:\Users\98914\.config\wandb\settings
+2023-08-27 21:28:37,630 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Loading settings from D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\settings
+2023-08-27 21:28:37,630 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-27 21:28:37,630 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-27 21:28:37,631 INFO    MainThread:20792 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'tcl-official-repo\\boost.py', 'program': 'd:\\text_clustering_paper\\my-forks\\tcl-fork\\2022-IJCV-TCL-fork\\tcl-official-repo\\boost.py'}
+2023-08-27 21:28:37,631 INFO    MainThread:20792 [wandb_init.py:_log_setup():507] Logging user logs to D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230827_212837-e1a0d3zw\logs\debug.log
+2023-08-27 21:28:37,632 INFO    MainThread:20792 [wandb_init.py:_log_setup():508] Logging internal logs to D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230827_212837-e1a0d3zw\logs\debug-internal.log
+2023-08-27 21:28:37,632 INFO    MainThread:20792 [wandb_init.py:init():547] calling init triggers
+2023-08-27 21:28:37,632 INFO    MainThread:20792 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-27 21:28:37,632 INFO    MainThread:20792 [wandb_init.py:init():596] starting backend
+2023-08-27 21:28:37,632 INFO    MainThread:20792 [wandb_init.py:init():600] setting up manager
+2023-08-27 21:28:37,635 INFO    MainThread:20792 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-08-27 21:28:37,638 INFO    MainThread:20792 [wandb_init.py:init():606] backend started and connected
+2023-08-27 21:28:37,642 INFO    MainThread:20792 [wandb_init.py:init():697] updated telemetry
+2023-08-27 21:28:37,688 INFO    MainThread:20792 [wandb_init.py:init():730] communicating run to backend with 60.0 second timeout
+2023-08-27 21:28:37,696 INFO    MainThread:20792 [wandb_init.py:init():781] starting run threads in backend
+2023-08-27 21:28:38,988 INFO    MainThread:20792 [wandb_run.py:_console_start():2159] atexit reg
+2023-08-27 21:28:38,989 INFO    MainThread:20792 [wandb_run.py:_redirect():2014] redirect: wrap_raw
+2023-08-27 21:28:38,989 INFO    MainThread:20792 [wandb_run.py:_redirect():2079] Wrapping output streams.
+2023-08-27 21:28:38,989 INFO    MainThread:20792 [wandb_run.py:_redirect():2104] Redirects installed.
+2023-08-27 21:28:38,990 INFO    MainThread:20792 [wandb_init.py:init():822] run started, returning control to user process
+2023-08-27 21:28:38,994 INFO    MainThread:20792 [wandb_run.py:_config_callback():1282] config_cb None None {'batch_size': 256, 'start_epoch': 500, 'epochs': 510, 'gpu': '0', 'wb_mode': 'offline', 'feature_dim': 128, 'instance_temperature': 0.5, 'cluster_temperature': 1.0, 'weight_decay': 0.0, 'lr_backbone': 5e-06, 'lr_head': 0.0005, 'dataset_dir': './datasets/', 'dataset': 'StackOverflow', 'class_num': 20, 'model_path': 'save/Stackoverflow/', 'seed': 0, 'resume': 'True', 'save_freq': 25, 'num_workers': 8, 'train_id': 'e1a0d3zw'}
+2023-08-27 21:28:41,617 INFO    MainThread:20792 [wandb_run.py:_config_callback():1282] config_cb None None {'batch_size': 256, 'start_epoch': 501, 'epochs': 510, 'gpu': '0', 'wb_mode': 'offline', 'feature_dim': 128, 'instance_temperature': 0.5, 'cluster_temperature': 1.0, 'weight_decay': 0.0, 'lr_backbone': 5e-06, 'lr_head': 0.0005, 'dataset_dir': './datasets/', 'dataset': 'StackOverflow', 'class_num': 20, 'model_path': 'save/Stackoverflow/', 'seed': 0, 'resume': 'True', 'save_freq': 25, 'num_workers': 8, 'train_id': 'e1a0d3zw'}
+2023-08-27 21:32:14,574 INFO    MainThread:20792 [wandb_watch.py:watch():51] Watching
+2023-08-27 21:53:06,446 WARNING MsgRouterThr:20792 [router.py:message_loop():77] message_loop has been closed

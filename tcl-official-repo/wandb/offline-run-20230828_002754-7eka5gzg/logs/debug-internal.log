@@ -1,0 +1,92 @@
+2023-08-28 00:27:54,899 INFO    StreamThr :5240 [internal.py:wandb_internal():86] W&B internal server running at pid: 5240, started at: 2023-08-28 00:27:54.899923
+2023-08-28 00:27:54,899 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status
+2023-08-28 00:27:54,899 INFO    WriterThread:5240 [datastore.py:open_for_write():85] open: D:\text_clustering_paper\my-forks\tcl-fork\2022-IJCV-TCL-fork\tcl-official-repo\wandb\offline-run-20230828_002754-7eka5gzg\run-7eka5gzg.wandb
+2023-08-28 00:27:55,000 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: run_start
+2023-08-28 00:27:55,904 DEBUG   HandlerThread:5240 [system_info.py:__init__():31] System info init
+2023-08-28 00:27:55,904 DEBUG   HandlerThread:5240 [system_info.py:__init__():46] System info init done
+2023-08-28 00:27:55,904 INFO    HandlerThread:5240 [system_monitor.py:start():181] Starting system monitor
+2023-08-28 00:27:55,904 INFO    SystemMonitor:5240 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-28 00:27:55,904 INFO    HandlerThread:5240 [system_monitor.py:probe():201] Collecting system info
+2023-08-28 00:27:55,920 INFO    SystemMonitor:5240 [interfaces.py:start():190] Started cpu monitoring
+2023-08-28 00:27:55,920 INFO    SystemMonitor:5240 [interfaces.py:start():190] Started disk monitoring
+2023-08-28 00:27:55,920 INFO    SystemMonitor:5240 [interfaces.py:start():190] Started gpu monitoring
+2023-08-28 00:27:55,920 INFO    SystemMonitor:5240 [interfaces.py:start():190] Started memory monitoring
+2023-08-28 00:27:55,935 INFO    SystemMonitor:5240 [interfaces.py:start():190] Started network monitoring
+2023-08-28 00:27:55,951 DEBUG   HandlerThread:5240 [system_info.py:probe():195] Probing system
+2023-08-28 00:27:55,951 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:27:55,951 DEBUG   HandlerThread:5240 [system_info.py:_probe_git():180] Probing git
+2023-08-28 00:27:55,951 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_info.py:_probe_git():188] Probing git done
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_info.py:probe():240] Probing system done
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.4', 'heartbeatAt': '2023-08-27T20:57:55.951297', 'startedAt': '2023-08-27T20:57:54.863110', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'd:\\text_clustering_paper\\my-forks\\tcl-fork\\2022-IJCV-TCL-fork\\tcl-official-repo\\boost.py', 'codePath': 'tcl-official-repo\\boost.py', 'git': {'remote': 'https://github.com/MohammadVahidiPro/2022-IJCV-TCL-fork.git', 'commit': '5f156d82a0130150e4cc68837aed1e3221fe74a6'}, 'email': 'mohammadvahidi.pro@gmail.com', 'root': 'D:/text_clustering_paper/my-forks/tcl-fork/2022-IJCV-TCL-fork', 'host': 'DESKTOP-59KKEO0', 'username': 'Mohammad', 'executable': 'C:\\Users\\98914\\anaconda3\\envs\\tcl-text\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1792.0, 'min': 0.0, 'max': 1992.0}, 'cpu_freq_per_core': [{'current': 1792.0, 'min': 0.0, 'max': 1992.0}], 'disk': {'total': 585.9374961853027, 'used': 112.6905517578125}, 'gpu': 'NVIDIA GeForce MX150', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX150', 'memory_total': 4294967296}], 'memory': {'total': 15.877574920654297}}
+2023-08-28 00:27:56,045 INFO    HandlerThread:5240 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-28 00:27:56,045 INFO    HandlerThread:5240 [system_monitor.py:probe():214] Publishing system info
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-28 00:27:56,045 ERROR   HandlerThread:5240 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\98914\anaconda3\envs\tcl-text\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-08-28 00:27:56,045 DEBUG   HandlerThread:5240 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-28 00:27:56,045 INFO    HandlerThread:5240 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-28 00:27:58,003 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:27:58,003 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:27:59,932 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:27:59,932 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:00,056 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:00,056 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:02,114 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:02,114 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:04,173 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:04,173 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:04,958 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:28:04,959 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:06,233 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:06,234 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:08,325 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:08,325 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:09,990 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:28:09,990 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:10,422 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:10,422 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:12,480 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:12,480 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:14,518 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:14,518 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:15,003 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:28:15,003 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:16,576 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:16,576 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:18,616 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:18,616 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:20,017 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:28:20,017 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:20,666 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:20,666 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:22,767 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:22,767 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:24,819 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:24,819 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:25,065 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:28:25,066 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:26,936 ERROR   gpu       :5240 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-08-28 00:28:26,937 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:26,938 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:28,984 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:28,984 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:30,097 DEBUG   HandlerThread:5240 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 00:28:30,097 DEBUG   SenderThread:5240 [sender.py:send_request():406] send_request: status_report
+2023-08-28 00:28:31,031 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:31,031 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:33,081 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-08-28 00:28:33,081 ERROR   gpu       :5240 [interfaces.py:monitor():144] Failed to sample metric: Not Supported

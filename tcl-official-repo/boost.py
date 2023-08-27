@@ -37,12 +37,12 @@ def timer(func):
 def get_args_parser():
     parser = argparse.ArgumentParser("TCL boosting for clustering", add_help=False)
     parser.add_argument(
-        "--batch_size", default=128, type=int, help="Batch size per GPU"
+        "--batch_size", default=256, type=int, help="Batch size per GPU"
     )
     parser.add_argument(
-        "--start_epoch", default=1, type=int, help="start epoch"
+        "--start_epoch", default=500, type=int, help="start epoch"
     )
-    parser.add_argument("--epochs", default=500, type=int) #10
+    parser.add_argument("--epochs", default=510, type=int) #10
     parser.add_argument("--gpu", default='0', type=str)
     parser.add_argument("--wb_mode", default="offline", type=str)
 
@@ -83,7 +83,7 @@ def get_args_parser():
     )
     parser.add_argument(
         "--dataset",
-        default="Biomedical",
+        default="StackOverflow",
         type=str,
         help="dataset",
         choices=["StackOverflow", "Biomedical"],
@@ -99,11 +99,12 @@ def get_args_parser():
     parser.add_argument("--seed", default=0, type=int)
     parser.add_argument(
         "--resume",
-        default=True,
+        default="True",
         help="resume from checkpoint",
     )
     parser.add_argument("--save_freq", default=25, type=int, help="saving frequency")
     parser.add_argument("--num_workers", default=8, type=int)
+    parser.add_argument("--train_id", type=str, default="this")
 
     return parser
 
@@ -120,12 +121,14 @@ def update_args(args):
     else:
         raise NotImplementedError
     
-    if args.check_id == "this":
-        args.check_id = run.id
-    embed_path = Path(args.model_path).resolve() / args.train_id / f"{run.id}-boost" / 'embed'
-    label_path = Path(args.model_path).resolve() / args.train_id / f"{run.id}-boost" / 'label'
-    checkpoint_path = Path(args.model_path).resolve() / f"{run.id}-boost" / 'checkpoints'
-    best_check_path = Path(args.model_path).resolve() / args.check_id / "checkpoints" / "best_model_avg.tar"
+    if args.train_id == "this":
+        args.train_id = run.id
+    embed_path = Path(args.model_path).resolve() /      f"{args.train_id}---{run.id}-boost"  / 'embed'
+    label_path = Path(args.model_path).resolve() /      f"{args.train_id}---{run.id}-boost"  / 'label'
+    checkpoint_path = Path(args.model_path).resolve() / f"{args.train_id}---{run.id}-boost"  / 'checkpoints'
+    # best_check_path = Path(args.model_path).resolve() / args.check_id / "checkpoints" / "best_model_avg.tar"
+    s = "D:\\tcl-checkpoints\\train\\1octqi7p\\checkpoints\\checkpoint_500.tar"
+    best_check_path = Path(s).resolve()
     embed_path.mkdir(parents=True, exist_ok=True)
     label_path.mkdir(parents=True, exist_ok=True)
     checkpoint_path.mkdir(parents=True, exist_ok=True)
@@ -155,24 +158,24 @@ class EvalDatasetIterater(data.Dataset):
 
     def __len__(self):
         return len(self.texta)
-
+@timer
 def perform_augmentation(args):
     # prepare data
     data_dir = args.dataset_dir
     aug1, aug2 = [], []
 
     # EDA augmentation
-    augment.gen_eda(os.path.join(data_dir, args.dataset + 'WithGnd.txt'),
+    augment.gen_eda(os.path.join(data_dir, args.dataset + '.txt'),
                     os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'),
                     0.2, 0.2, 0.2, 0.2, 1)
-    with open(os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'), "r") as f1:
+    with open(os.path.join(data_dir, args.dataset + 'EDA_aug_boost.txt'), "r", encoding="utf8") as f1:
         for line in f1:
             aug1.append(line.strip('\n'))
         f1.close()
 
     # Roberta augmentation
     data = []
-    with open(os.path.join(data_dir, args.dataset + '.txt'), "r") as f2:
+    with open(os.path.join(data_dir, args.dataset + '.txt'), "r", encoding="utf8") as f2:
         lines = f2.readlines()
         lines = [line.strip('\n') for line in lines]
         # for line in f1:
@@ -269,7 +272,7 @@ if __name__ == "__main__":
     run.name = "|".join(run.tags)
     best_check_path, checkpoint_path ,embed_path, label_path = update_args(args)
 
-    run.config.update(args)
+    run.config.update(args, allow_val_change=True)
     import pprint
     pprint.pprint(args)
     print("wandb run id: ", run.id)
@@ -309,7 +312,7 @@ if __name__ == "__main__":
             model.load_state_dict(checkpoint['net'])
             optimizer.load_state_dict(checkpoint['optimizer'])
             args.start_epoch = checkpoint['epoch'] + 1
-            run.config.update(args)
+            run.config.update(args, allow_val_change=True)
             print("resuming from epoch ", args.start_epoch)
         else:
             print("checkpoint path doesn't exist")
@@ -317,7 +320,7 @@ if __name__ == "__main__":
     else:
         print("training from scratch")
 
-
+    global_step = args.start_epoch
     # loss
     loss_device = torch.device("cuda")
     criterion = loss.ContrastiveLoss(args.batch_size, args.batch_size, class_num,
@@ -326,7 +329,7 @@ if __name__ == "__main__":
 
     # pipeline
     labels = []
-    with open(os.path.join(args.dataset_dir, args.dataset + '_gnd.txt'), "r") as f1:
+    with open(os.path.join(args.dataset_dir, args.dataset + '_gnd.txt'), "r", encoding="utf8") as f1:
         for line in f1:
             labels.append(int(line.strip('\n')))
         f1.close()
@@ -392,14 +395,15 @@ if __name__ == "__main__":
                                                                                                                     conf_scores['acc'],
                                                                                                                     conf_scores['avg']))
             
-            conf_scores["epoch"] = conf_scores
+            conf_scores["epoch"] = epoch + 1
             if best_conf_score is None or best_conf_score['avg'] < conf_scores['avg']:
                 best_conf_score = conf_scores.copy()
                 print("////////////////// best conf \ \ \ \ \ \ \ ")
                 save_model(args, model, optimizer, optimizer_head, epoch + 1, path=checkpoint_path, id=run.id, best=True, conf=True)
-                wb.log({f'best-conf/{k}': v for k, v in conf_scores.items()})
-                
-            wb.log({f"conf/{k}": v for k, v in conf_scores.items()})
+                dic = {f'best-conf/{k}': v for k, v in conf_scores.items()}
+                wb.log(dic)
+            dic = {f"conf/{k}": v for k, v in conf_scores.items()}
+            wb.log(dic)
         last_pseudo_num = pseudo_num
 
         if (epoch + 1) % args.save_freq == 0 or (epoch + 1) == args.epochs:
@@ -408,7 +412,8 @@ if __name__ == "__main__":
             if score["avg"] > best_score["avg"]:
                 best = True
                 best_score = score.copy()
-                wb.log({f"best/{k}": v for k, v in best_score.items()})
+                dic = {f"best/{k}": v for k, v in best_score.items()}
+                wb.log(dic)
                 print(f"/\/\/\ new best at epoch {epoch + 1} /\/\/\ ")
 
             e_path = embed_path  / f"iter_{epoch + 1}_embeds.npy"

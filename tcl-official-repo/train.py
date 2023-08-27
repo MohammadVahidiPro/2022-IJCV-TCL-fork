@@ -98,12 +98,12 @@ def get_args_parser():
     parser.add_argument("--seed", default=0, type=int)
     parser.add_argument(
         "--resume",
-        default="True",
+        default="False",
         help="resume from checkpoint",
     )
     parser.add_argument("--check_id", type=str, default="this")
     parser.add_argument(
-        "--start_epoch", default=500, type=int, help="start epoch"
+        "--start_epoch", default=0, type=int, help="start epoch"
     )
     parser.add_argument("--save_freq", default=50, type=int, help="saving frequency")
     parser.add_argument("--num_workers", default=8, type=int) # 10
@@ -346,6 +346,7 @@ if __name__ == "__main__":
     
     wb.watch(model)
     t = time.time()
+    print("from epoch {} to epoch {}".format(args.start_epoch, args.epochs))
     for epoch in range(args.start_epoch, args.epochs):
         global_step = epoch
         
