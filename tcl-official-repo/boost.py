@@ -27,9 +27,9 @@ def timer(func):
         dif_min = round(dif / 60, 2)
         name = func.__name__
         
-        if global_step < 20:
+        if global_step - 500 < 20 or global_step % 40 == 0:
             print(f"## timer step {global_step} ## {name}: {dif_min} MIN")
-        if global_step < 20 or global_step % 20:
+        if global_step - 500 < 20 or global_step % 20:
             wb.log({f"t(m)/{name}": dif_min, f"t(s)/{name}": dif})
         return results
     return wrapper
@@ -389,7 +389,8 @@ if __name__ == "__main__":
                                                        pseudo_labels[pseudo_index].cpu().numpy(),
                                                        args.class_num)
             conf_scores["avg"] = (conf_scores["acc"] + conf_scores["nmi"]) / 2
-            print('pseudo CONFIDENCE scores F = {:.4f} ARI = {:.4f} NMI = {:.4f} ACC = {:.4f} AVG = {:.4f}'.format(conf_scores['f_measure'],
+            print('##{} pseudo CONFIDENCE scores F = {:.4f} ARI = {:.4f} NMI = {:.4f} ACC = {:.4f} AVG = {:.4f}'.format(epoch + 1, 
+                                                                                                                    conf_scores['f_measure'],
                                                                                                                     conf_scores['ari'],
                                                                                                                     conf_scores['nmi'],
                                                                                                                     conf_scores['acc'],
